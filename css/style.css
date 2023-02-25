@@ -2,6 +2,7 @@
 
 @import './header/header.css';
 @import './hero/hero.css';
+@import './apps/apps.css';
 
 *{
     font-family: 'Satoshi', sans-serif;

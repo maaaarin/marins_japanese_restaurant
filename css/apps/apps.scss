@@ -1,0 +1,126 @@
+
+
+.apps-section{
+    margin-top: 10vmin;
+    overflow: hidden;
+}
+
+.apps-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vmin;
+
+    #apps-header-title{
+        font-size: 9vmin;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    #apps-header-subtitle{
+        font-size: 6.5vmin;
+        font-weight: 100;
+    }
+}
+
+
+.apps-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4.5vmin;
+    overflow-x: hidden;
+}
+
+.app{
+    width: 100%;
+    height: 160vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vmin;
+    padding-bottom: 6.5vmin;
+    border-radius: 4.5vmin;
+    flex: none;
+
+    .app-container{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px -5px rgba(0,0,0,0.48);
+        padding: 5vmin;
+        border-radius: 4.5vmin;
+    }
+
+    .app-img{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 4.5vmin;
+    
+        #app-img{
+            width: 100%;
+            height: 115%;
+            object-fit: contain;
+            border-radius: 4.5vmin;
+        }
+    }
+
+    .app-information{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 5vmin 0;
+        
+        #app-title{
+            font-size: 7vmin;
+            font-weight: bold;
+            margin-bottom: 3.5vmin;
+        }
+
+        #app-description{
+            font-size: 5.5vmin;
+            font-weight: 100;
+        }
+    }
+}
+
+.app:nth-child(1) .app-img{
+    background-color: #FFC8D0;
+}
+
+.app:nth-child(2) .app-img{
+    background-color: #E4F2FF;
+}
+.app:nth-child(3) .app-img{
+    background-color: #CBFFDA;
+}
+
+.apps-slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vmin;
+    margin-bottom: 5vmin;
+
+    .slider{
+        width: 6vmin;
+        height: 6vmin;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.48);
+        transition-duration: .6s;
+    }
+
+    .active{
+        width: 15vmin;
+        border-radius: 150px;
+        background-color: #000;
+        transition-duration: .6s;
+    }
+}
