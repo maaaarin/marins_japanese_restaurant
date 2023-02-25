@@ -6,6 +6,7 @@
 @import './reviews/reviews.css';
 @import './product/product.css';
 @import './recommendations/recommendations.css';
+@import './footer/footer.css';
 
 *{
     font-family: 'Satoshi', sans-serif;
