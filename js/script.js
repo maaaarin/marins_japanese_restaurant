@@ -1,50 +1,94 @@
 'use strict'
 
-// cards Slider
+// Cards Slider
 
 var cards_container = document.querySelector('.cards-container'),
     cards_slider = document.querySelector('.cards-slider'),
     cards_section = document.querySelector('.cards-section');
 
-var position = 0,
-    limit = (cards_container.childElementCount) - 1,
-    x,
-    x_prev,
-    touched;
+var position_cards = 0,
+    limit_cards = (cards_container.childElementCount) - 1,
+    x_cards,
+    x_prev_cards,
+    touched_cards;
 
 cards_container.addEventListener('touchstart', (e) => {
-    x_prev = e.touches[0].clientX;
-    touched = true;
+    x_prev_cards = e.touches[0].clientX;
+    touched_cards = true;
 });
 
 cards_container.addEventListener('touchmove', (e) => {
-    x = e.touches[0].clientX;
-    if (touched){
-        if (x < x_prev) {
+    x_cards = e.touches[0].clientX;
+    if (touched_cards){
+        if (x_cards < x_prev_cards) {
             // Right
-            if (position !== limit){
-                position++;
-                let width_card = cards_container.children[position].getBoundingClientRect().x,
+            if (position_cards !== limit_cards){
+                position_cards++;
+                let width_card = cards_container.children[position_cards].getBoundingClientRect().x,
                     gap_card = cards_container.getBoundingClientRect().x;
                 cards_container.scrollLeft += width_card - gap_card;
-                cards_slider.children[position-1].classList.remove('active');
-                cards_slider.children[position].classList.add('active');
-                console.log(position)
+                cards_slider.children[position_cards-1].classList.remove('active');
+                cards_slider.children[position_cards].classList.add('active');
             }
-        } else if (x > x_prev) {
+        } else if (x_cards > x_prev_cards) {
             // Left
-            if (position !== 0){
-                position--;
-                let width_card = cards_container.children[position].getBoundingClientRect().x,
+            if (position_cards !== 0){
+                position_cards--;
+                let width_card = cards_container.children[position_cards].getBoundingClientRect().x,
                     gap_card = cards_container.getBoundingClientRect().x;
                 cards_container.scrollLeft += width_card - gap_card;
-                cards_slider.children[position+1].classList.remove('active');
-                cards_slider.children[position].classList.add('active');
-                console.log(position)
+                cards_slider.children[position_cards+1].classList.remove('active');
+                cards_slider.children[position_cards].classList.add('active');
             }
         }
     }
-    touched = false;
+    touched_cards = false;
+    }
+);
+
+// Recommendations Slider
+
+var recommendations_container = document.querySelector('.recommendations-container'),
+    recommendations_slider = document.querySelector('.recommendations-slider'),
+    recommendations_section = document.querySelector('.recommendations-section');
+
+var position_recommendations = 0,
+    limit_recommendations = (recommendations_container.childElementCount) - 2,
+    x_recommendations,
+    x_prev_recommendations,
+    touched_recommendations;
+
+recommendations_container.addEventListener('touchstart', (e) => {
+    x_prev_recommendations = e.touches[0].clientX;
+    touched_recommendations = true;
+});
+
+recommendations_container.addEventListener('touchmove', (e) => {
+    x_recommendations = e.touches[0].clientX;
+    if (touched_recommendations){
+        if (x_recommendations < x_prev_recommendations) {
+            // Right
+            if (position_recommendations !== limit_recommendations){
+                position_recommendations++;
+                let width_product = recommendations_container.children[position_recommendations].getBoundingClientRect().x,
+                    gap_product = recommendations_container.getBoundingClientRect().x;
+                recommendations_container.scrollLeft += width_product - gap_product;
+                recommendations_slider.children[position_recommendations-1].classList.remove('active');
+                recommendations_slider.children[position_recommendations].classList.add('active');
+            }
+        } else if (x_recommendations > x_prev_recommendations) {
+            // Left
+            if (position_recommendations !== 0){
+                position_recommendations--;
+                let width_product = recommendations_container.children[position_recommendations].getBoundingClientRect().x,
+                    gap_product = recommendations_container.getBoundingClientRect().x;
+                recommendations_container.scrollLeft += width_product - gap_product;
+                recommendations_slider.children[position_recommendations+1].classList.remove('active');
+                recommendations_slider.children[position_recommendations].classList.add('active');
+            }
+        }
+    }
+    touched_recommendations = false;
     }
 );
 

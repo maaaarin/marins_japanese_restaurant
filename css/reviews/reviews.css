@@ -3,6 +3,19 @@
   margin-top: 10vmin;
 }
 
+.reviews-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmin;
+  margin-bottom: 5vmin;
+}
+.reviews-header #reviews-header-title {
+  font-size: 9vmin;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .reviews-container {
   width: 100%;
   display: flex;

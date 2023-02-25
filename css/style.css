@@ -4,6 +4,8 @@
 @import './hero/hero.css';
 @import './cards/cards.css';
 @import './reviews/reviews.css';
+@import './product/product.css';
+@import './recommendations/recommendations.css';
 
 *{
     font-family: 'Satoshi', sans-serif;

@@ -1,0 +1,95 @@
+.product{
+    width: calc(50% - 1.75vmin);
+    aspect-ratio: 1 / 2;
+    flex: none;
+    border-radius: 3.5vmin;
+    box-shadow: 3.5px 3.5px 10px -5px rgba(0,0,0,0.48);
+
+    .product-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 3.5vmin;
+        overflow: hidden;
+        position: relative;
+
+        .product-img{
+            width: 100%;
+            height: 60%;
+            background-color: #C4E3FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            #sushi{
+                width: 60%;
+            }
+
+            #wok{
+                width: 80%;
+            }
+
+            #soup{
+                width: 75%;
+            }
+        }
+
+        .product-tag{
+            font-size: 4vmin;
+            font-weight: 100;
+            position: absolute;
+            color: #fff;
+            background-color: #FD3F3F;
+            border-radius: 150px;
+            padding: .65vmin 5vmin;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .product-information{
+            width: 100%;
+            height: 40%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3vmin;
+            padding-top: 5.5vmin;
+
+            #product-name{
+                font-size: 4.5vmin;
+                white-space: nowrap;
+            }
+
+            .product-price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span{
+                    font-size: 5vmin;
+                    color: #fff;
+                    background-color: #000;
+                    border-radius: 150px;
+                    padding: 1.25vmin 4.10vmin;
+                }
+
+                .product-bag{
+                    border: none;
+                    outline: none;
+                    background-color: #C4E3FF;
+                    padding: 2vmin;
+                    border-radius: 1vmin;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    #product-bag-icon{
+                        width: 6vmin;
+                        height: 6vmin;
+                    }
+                }
+            }
+        }
+    }
+}
