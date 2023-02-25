@@ -3,6 +3,7 @@
 @import './header/header.css';
 @import './hero/hero.css';
 @import './cards/cards.css';
+@import './reviews/reviews.css';
 
 *{
     font-family: 'Satoshi', sans-serif;
