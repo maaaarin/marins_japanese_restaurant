@@ -1,30 +1,30 @@
 
 
-.apps-section{
+.cards-section{
     margin-top: 10vmin;
     overflow: hidden;
 }
 
-.apps-header{
+.cards-header{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5vmin;
 
-    #apps-header-title{
+    #cards-header-title{
         font-size: 9vmin;
         font-weight: bold;
         white-space: nowrap;
     }
 
-    #apps-header-subtitle{
+    #cards-header-subtitle{
         font-size: 6.5vmin;
         font-weight: 100;
     }
 }
 
 
-.apps-container{
+.cards-container{
     width: 100%;
     height: auto;
     display: flex;
@@ -34,7 +34,7 @@
     overflow-x: hidden;
 }
 
-.app{
+.card{
     width: 100%;
     height: 160vmin;
     display: flex;
@@ -45,7 +45,7 @@
     border-radius: 4.5vmin;
     flex: none;
 
-    .app-container{
+    .card-container{
         width: 100%;
         height: 100%;
         background-color: #fff;
@@ -54,14 +54,14 @@
         border-radius: 4.5vmin;
     }
 
-    .app-img{
+    .card-img{
         width: 100%;
         height: 60%;
         display: flex;
         align-items: flex-end;
         border-radius: 4.5vmin;
     
-        #app-img{
+        #card-img{
             width: 100%;
             height: 115%;
             object-fit: contain;
@@ -69,38 +69,38 @@
         }
     }
 
-    .app-information{
+    .card-information{
         width: 100%;
         height: 40%;
         display: flex;
         flex-direction: column;
         padding: 5vmin 0;
         
-        #app-title{
+        #card-title{
             font-size: 7vmin;
             font-weight: bold;
             margin-bottom: 3.5vmin;
         }
 
-        #app-description{
+        #card-description{
             font-size: 5.5vmin;
             font-weight: 100;
         }
     }
 }
 
-.app:nth-child(1) .app-img{
+.card:nth-child(1) .card-img{
     background-color: #FFC8D0;
 }
 
-.app:nth-child(2) .app-img{
+.card:nth-child(2) .card-img{
     background-color: #E4F2FF;
 }
-.app:nth-child(3) .app-img{
+.card:nth-child(3) .card-img{
     background-color: #CBFFDA;
 }
 
-.apps-slider{
+.cards-slider{
     width: 100%;
     height: auto;
     display: flex;
