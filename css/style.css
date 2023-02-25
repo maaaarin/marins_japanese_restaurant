@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 @import './header/header.css';
+@import './hero/hero.css';
 
 *{
     font-family: 'Satoshi', sans-serif;
