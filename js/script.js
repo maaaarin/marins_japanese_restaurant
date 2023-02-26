@@ -17,6 +17,8 @@ cards_container.addEventListener('touchstart', (e) => {
     touched_cards = true;
 });
 
+var padding_cards_container = parseFloat(window.getComputedStyle(cards_container).getPropertyValue('padding-left'));
+
 cards_container.addEventListener('touchmove', (e) => {
     x_cards = e.touches[0].clientX;
     if (touched_cards){
@@ -26,7 +28,7 @@ cards_container.addEventListener('touchmove', (e) => {
                 position_cards++;
                 let width_card = cards_container.children[position_cards].getBoundingClientRect().x,
                     gap_card = cards_container.getBoundingClientRect().x;
-                cards_container.scrollLeft += width_card - gap_card;
+                cards_container.scrollLeft += width_card - gap_card - padding_cards_container;
                 cards_slider.children[position_cards-1].classList.remove('active');
                 cards_slider.children[position_cards].classList.add('active');
             }
@@ -36,7 +38,7 @@ cards_container.addEventListener('touchmove', (e) => {
                 position_cards--;
                 let width_card = cards_container.children[position_cards].getBoundingClientRect().x,
                     gap_card = cards_container.getBoundingClientRect().x;
-                cards_container.scrollLeft += width_card - gap_card;
+                cards_container.scrollLeft += width_card - gap_card - padding_cards_container;
                 cards_slider.children[position_cards+1].classList.remove('active');
                 cards_slider.children[position_cards].classList.add('active');
             }
@@ -63,6 +65,8 @@ recommendations_container.addEventListener('touchstart', (e) => {
     touched_recommendations = true;
 });
 
+var padding_recommendations_container = parseFloat(window.getComputedStyle(recommendations_container).getPropertyValue('padding-left'));
+
 recommendations_container.addEventListener('touchmove', (e) => {
     x_recommendations = e.touches[0].clientX;
     if (touched_recommendations){
@@ -72,7 +76,7 @@ recommendations_container.addEventListener('touchmove', (e) => {
                 position_recommendations++;
                 let width_product = recommendations_container.children[position_recommendations].getBoundingClientRect().x,
                     gap_product = recommendations_container.getBoundingClientRect().x;
-                recommendations_container.scrollLeft += width_product - gap_product;
+                recommendations_container.scrollLeft += width_product - gap_product - padding_recommendations_container;
                 recommendations_slider.children[position_recommendations-1].classList.remove('active');
                 recommendations_slider.children[position_recommendations].classList.add('active');
             }
@@ -82,13 +86,56 @@ recommendations_container.addEventListener('touchmove', (e) => {
                 position_recommendations--;
                 let width_product = recommendations_container.children[position_recommendations].getBoundingClientRect().x,
                     gap_product = recommendations_container.getBoundingClientRect().x;
-                recommendations_container.scrollLeft += width_product - gap_product;
+                recommendations_container.scrollLeft += width_product - gap_product - padding_recommendations_container;
                 recommendations_slider.children[position_recommendations+1].classList.remove('active');
                 recommendations_slider.children[position_recommendations].classList.add('active');
             }
         }
     }
     touched_recommendations = false;
+    }
+);
+
+// Categories Slider
+
+var categories_container = document.querySelector('.categories-container'),
+    categories_section = document.querySelector('.categories-section');
+
+var position_categories = 0,
+    limit_categories = (categories_container.childElementCount) - 1,
+    x_categories,
+    x_prev_categories,
+    touched_categories;
+
+categories_container.addEventListener('touchstart', (e) => {
+    x_prev_categories = e.touches[0].clientX;
+    touched_categories = true;
+});
+
+var padding_categories_container = parseFloat(window.getComputedStyle(categories_container).getPropertyValue('padding-left'));
+
+categories_container.addEventListener('touchmove', (e) => {
+    x_categories = e.touches[0].clientX;
+    if (touched_categories){
+        if (x_categories < x_prev_categories) {
+            // Right
+            if (position_categories !== limit_categories){
+                position_categories++;
+                let width_category = categories_container.children[position_categories].getBoundingClientRect().x,
+                    gap_category = categories_container.getBoundingClientRect().x;
+                categories_container.scrollLeft += width_category - gap_category - padding_categories_container;
+            }
+        } else if (x_categories > x_prev_categories) {
+            // Left
+            if (position_categories !== 0){
+                position_categories--;
+                let width_category = categories_container.children[position_categories].getBoundingClientRect().x,
+                    gap_category = categories_container.getBoundingClientRect().x;
+                categories_container.scrollLeft += width_category - gap_category - padding_categories_container;
+            }
+        }
+    }
+    touched_categories = false;
     }
 );
 

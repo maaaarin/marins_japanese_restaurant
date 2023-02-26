@@ -4,12 +4,14 @@
 @import './hero/hero.css';
 @import './cards/cards.css';
 @import './reviews/reviews.css';
+@import './categories/categories.css';
 @import './product/product.css';
 @import './recommendations/recommendations.css';
 @import './footer/footer.css';
 
 *{
     font-family: 'Satoshi', sans-serif;
+    font-weight: 100;
     margin: 0;
     padding: 0;
     list-style: none;
