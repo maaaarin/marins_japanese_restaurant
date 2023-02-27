@@ -43,13 +43,16 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-section nav-searchbar d-lg">
+                <li class="nav-section nav-searchbar d-xl">
                     <input id="nav-search-input" type="text" placeholder="Search for name, type...">
                     <svg id="nav-search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
                 </li>
                 <li class="nav-section">
+                    <svg id="nav-search-icon" class="d-lg d-none-xl" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
                     <svg id="nav-bag-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
                     </svg>
@@ -186,6 +189,24 @@
             <div class="product">
                 <div class="product-container">
                     <div class="product-img">
+                        <img id="sushi" src="./assets/media/products/wok_2.png" alt="Product Image">
+                    </div>
+                    <div class="product-information">
+                        <span id="product-name">Black Wok</span>
+                        <div class="product-price">
+                            <span>12,25 €</span>
+                            <button class="product-bag">
+                                <svg id="product-bag-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-container">
+                    <div class="product-img">
                         <img id="sushi" src="./assets/media/products/sushi_4.png" alt="Product Image">
                     </div>
                     <div class="product-information">
@@ -206,19 +227,18 @@
             <div class="slider active"></div>
             <div class="slider"></div>
             <div class="slider"></div>
+            <div class="slider"></div>
             <div class="slider d-none-md"></div>
         </div>
     </section>
     <section>
-        <div class="contenedor">
-                 <div class="imagen">
+        <div class="contenedor container">
+                <div class="imagen">
                         <img src="./assets/media/sushi_rolls.png" alt="" class="sushi">
                 </div>
-
                 <div class="parrafo">
                     <h2>Dont' miss it!</h2>
                     <p>We pride ourselves on offering authentic dishes that capture the true taste of japan</p>
-
                 </div>
         </div>
     </section>
@@ -235,7 +255,7 @@
                     </div>
                     <div class="review-information">
                         <span id="review-title">A delight!</span>
-                        <p id="review-comment">This product is a delight! Since I tried it, it has become my favorite sushi for any time of the day. The texture is perfect and the taste is very authentic, I definitely recommend it!</p>
+                        <p id="review-comment">This product is a delight! Since I tried it, it has become my favorite sushi for any time of the day. The texture is perfect and the taste is very authentic.</p>
                         <button id="review-btn">Try it!</button>
                     </div>
                 </div>
@@ -261,7 +281,7 @@
                     </div>
                     <div class="review-information">
                         <span id="review-title">Impressing</span>
-                        <p id="review-comment">This product is awesome! I have never tasted something as tasty and authentic as this. If you like Japanese food, you have to try it. It is a culinary experience that you cannot miss.</p>
+                        <p id="review-comment">This product is awesome! I have never tasted something as tasty and authentic as this. If you like Japanese food, you have to try it. It's a great culinary experience.</p>
                         <button id="review-btn">Try it!</button>
                     </div>
                 </div>
@@ -275,36 +295,30 @@
         </div>
         <div class="cards-container container">
             <div class="card">
-                <div class="card-container">
-                    <div class="card-img">
-                        <img id="card-img" src="./assets/media/marins-card.png" alt="Marins card">
-                    </div>
-                    <div class="card-information">
-                        <span id="card-title">Find us!</span>
-                        <p id="card-description">We have convenient locations in the center and in the main neighborhoods of the city, so we are always close to you.</p>
-                    </div>
+                <div class="card-img">
+                    <img id="card-img" src="./assets/media/marins-card.png" alt="Marins card">
+                </div>
+                <div class="card-information">
+                    <span id="card-title">Our App!</span>
+                    <p id="card-description">Download our card and get exclusive access to special offers, up-to-date menus, and quick and easy ordering options.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-container">
-                    <div class="card-img">
-                        <img id="card-img" src="./assets/media/maps-card.png" alt="Marins card">
-                    </div>
-                    <div class="card-information">
-                        <span id="card-title">Your opinion!</span>
-                        <p id="card-description">Your opinion is valuable to us and helps us improve every day to offer you the best service and quality Japanese food.</p>
-                    </div>
+                <div class="card-img">
+                    <img id="card-img" src="./assets/media/maps-card.png" alt="Marins card">
+                </div>
+                <div class="card-information">
+                    <span id="card-title">Your opinion!</span>
+                    <p id="card-description">Your opinion is valuable to us and helps us improve every day to offer you the best service and quality Japanese food.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-container">
-                    <div class="card-img">
-                        <img id="card-img" src="./assets/media/review-card.png" alt="Marins card">
-                    </div>
-                    <div class="card-information">
-                        <span id="card-title">Our card!</span>
-                        <p id="card-description">Download our card and get exclusive access to special offers, up-to-date menus, and quick and easy ordering options.</p>
-                    </div>
+                <div class="card-img">
+                    <img id="card-img" src="./assets/media/review-card.png" alt="Marins card">
+                </div>
+                <div class="card-information">
+                    <span id="card-title">Find us!</span>
+                    <p id="card-description">We have convenient locations in the center and in the main neighborhoods of the city, so we are always close to you.</p>
                 </div>
             </div>
         </div>
@@ -316,7 +330,7 @@
     </section>
     <footer class="container">
         <div class="footer-container">
-            <svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 415.67 101.52">
+            <svg id="footer-logo" class="d-none-xl" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 415.67 101.52">
                 <path d="M0,.57H19.33L61.43,86.63,97.94,.57h15.75c-5.44,1.72-6.87,6.3-6.87,11.45V89.2c0,5.15,1.43,9.88,6.87,11.6h-23.48c5.44-1.72,7.02-6.3,7.02-11.6V6.73L57.27,100.66,11.88,7.3V88.06c0,6.87,4.3,10.74,10.45,12.74H0c6.16-2,10.31-6.01,10.31-12.74V12.6C10.31,6.3,5.58,2.29,0,.57Z"/>
                 <path d="M125.29,83.48c0-16.61,29.07-23.05,41.67-24.91v-7.59c0-9.16-3.29-20.19-14.46-20.19-5.15,0-14.61,2.43-14.61,8.88,0,2,.72,3.87,.72,6.01,0,3.44-2,5.3-5.44,5.3s-5.01-2.72-5.01-5.73c0-9.74,17.61-16.04,25.63-16.04,19.33,0,21.19,11.03,21.19,27.49,8.59-2.15,17.04-4.87,24.77-9.31,0-3.01-.57-9.02-4.72-9.02l12.89-9.02v12.89c6.3-4.73,13.17-13.03,21.76-13.03,3.01,0,5.87,1.29,5.87,4.58s-2,5.01-5.3,5.01-4.44-2.58-8.73-2.58c-2.58,0-5.87,1.58-7.87,3.29-14.75,12.74-30.93,17.18-49.54,21.19-12.31,2.72-28.78,7.02-28.78,22.62,0,8.88,5.87,14.46,14.6,14.46,5.87,0,10.6-2.43,15.32-5.58-4.87,6.16-12.31,8.88-20.05,8.88-10.74,0-19.9-6.01-19.9-17.61Zm41.67-20.33c2.72-.72,5.3-1.29,8.02-1.86v26.06c0,4.44,1.58,8.88,6.73,8.88,2,0,4.01-.43,5.44-1.86-1,3.58-6.44,6.73-10.02,6.73-8.59,0-10.17-6.44-10.17-13.75v-24.2Zm25.92,37.66c5.58-2,6.87-6.3,6.87-11.74V52.55c2-1,6.44-3.87,8.16-5.44v41.95c0,5.58,1.43,9.31,6.73,11.74h-21.76Z"/>
                 <path d="M242.27,100.8c5.44-1.72,6.87-6.44,6.87-11.74V47.11c0-3.01-.57-8.88-4.73-8.88l12.89-9.02v59.85c0,5.3,1.57,10.02,6.87,11.74h-21.91Zm7.45-80.47l4.01-12.46h8.16l-9.74,12.46h-2.43Z"/>
@@ -325,20 +339,43 @@
                 <path d="M389.03,99.37c8.16,0,21.33-1.86,21.33-12.6,0-18.33-45.96-14.18-45.96-38.37,0-13.17,11.45-20.05,23.48-20.05,5.58,0,19.04,2.72,24.2,5.01v13.46c-3.29-10.17-14.32-17.18-24.77-17.18-7.3,0-17.76,4.15-17.76,12.74,0,20.9,46.11,15.89,46.11,39.23,0,14.75-12.74,19.9-25.49,19.9-8.3,0-18.76-1.86-26.78-4.3v-17.04c4.15,10.88,13.6,19.19,25.63,19.19Z"/>
             </svg>
             <ul class="footer-links">
-                <li class="footer-link">
+                <li class="footer-link d-none-xl">
                     <a href="#">Menu</a>
                 </li>
-                <li class="footer-link">
+                <li class="footer-link d-none-xl">
                     <a href="#">Features</a>
                 </li>
-                <li class="footer-link">
+                <li class="footer-link d-none-xl">
                     <a href="#">Latest</a>
                 </li>
-                <li class="footer-link">
-                    <a href="#">About</a>
+                <li class="footer-link d-xl">
+                    <a href="#">Menu</a>
+                    <a href="#">Features</a>
+                    <a href="#">Latest</a>
                 </li>
-                <li class="footer-link">
+                <li class="footer-link d-xl">
+                    <svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 415.67 101.52">
+                        <path d="M0,.57H19.33L61.43,86.63,97.94,.57h15.75c-5.44,1.72-6.87,6.3-6.87,11.45V89.2c0,5.15,1.43,9.88,6.87,11.6h-23.48c5.44-1.72,7.02-6.3,7.02-11.6V6.73L57.27,100.66,11.88,7.3V88.06c0,6.87,4.3,10.74,10.45,12.74H0c6.16-2,10.31-6.01,10.31-12.74V12.6C10.31,6.3,5.58,2.29,0,.57Z"/>
+                        <path d="M125.29,83.48c0-16.61,29.07-23.05,41.67-24.91v-7.59c0-9.16-3.29-20.19-14.46-20.19-5.15,0-14.61,2.43-14.61,8.88,0,2,.72,3.87,.72,6.01,0,3.44-2,5.3-5.44,5.3s-5.01-2.72-5.01-5.73c0-9.74,17.61-16.04,25.63-16.04,19.33,0,21.19,11.03,21.19,27.49,8.59-2.15,17.04-4.87,24.77-9.31,0-3.01-.57-9.02-4.72-9.02l12.89-9.02v12.89c6.3-4.73,13.17-13.03,21.76-13.03,3.01,0,5.87,1.29,5.87,4.58s-2,5.01-5.3,5.01-4.44-2.58-8.73-2.58c-2.58,0-5.87,1.58-7.87,3.29-14.75,12.74-30.93,17.18-49.54,21.19-12.31,2.72-28.78,7.02-28.78,22.62,0,8.88,5.87,14.46,14.6,14.46,5.87,0,10.6-2.43,15.32-5.58-4.87,6.16-12.31,8.88-20.05,8.88-10.74,0-19.9-6.01-19.9-17.61Zm41.67-20.33c2.72-.72,5.3-1.29,8.02-1.86v26.06c0,4.44,1.58,8.88,6.73,8.88,2,0,4.01-.43,5.44-1.86-1,3.58-6.44,6.73-10.02,6.73-8.59,0-10.17-6.44-10.17-13.75v-24.2Zm25.92,37.66c5.58-2,6.87-6.3,6.87-11.74V52.55c2-1,6.44-3.87,8.16-5.44v41.95c0,5.58,1.43,9.31,6.73,11.74h-21.76Z"/>
+                        <path d="M242.27,100.8c5.44-1.72,6.87-6.44,6.87-11.74V47.11c0-3.01-.57-8.88-4.73-8.88l12.89-9.02v59.85c0,5.3,1.57,10.02,6.87,11.74h-21.91Zm7.45-80.47l4.01-12.46h8.16l-9.74,12.46h-2.43Z"/>
+                        <path d="M273.2,100.8c5.73-2,7.3-6.73,7.3-12.46V48.25c0-3.29-.72-9.45-5.15-9.45l13.17-9.59,.14,59.14c0,5.73,1.57,10.45,7.3,12.46h-22.77Zm20.05-60.57c5.58-6.73,14.03-11.45,22.91-11.45,14.32,0,20.33,11.88,20.33,24.91v34.65c0,5.73,1.72,10.6,7.45,12.46h-22.91c5.73-1.86,7.3-6.87,7.3-12.46V51.98c0-10.02-4.01-19.76-15.46-19.76-7.16,0-14.18,3.72-19.62,8.02Z"/>
+                        <path d="M352.95,0c4.15,0,7.02,2.58,7.02,7.45s-2.58,10.31-6.16,13.46l-1-1c2.43-3.29,2.72-7.02,.14-7.02-3.44,0-6.3-2.72-6.3-6.44,0-3.44,2.86-6.44,6.3-6.44Z"/>
+                        <path d="M389.03,99.37c8.16,0,21.33-1.86,21.33-12.6,0-18.33-45.96-14.18-45.96-38.37,0-13.17,11.45-20.05,23.48-20.05,5.58,0,19.04,2.72,24.2,5.01v13.46c-3.29-10.17-14.32-17.18-24.77-17.18-7.3,0-17.76,4.15-17.76,12.74,0,20.9,46.11,15.89,46.11,39.23,0,14.75-12.74,19.9-25.49,19.9-8.3,0-18.76-1.86-26.78-4.3v-17.04c4.15,10.88,13.6,19.19,25.63,19.19Z"/>
+                    </svg>
+                </li>
+                <li class="footer-link d-xl">
+                    <a href="#">Company</a>
+                    <a href="#">Blog</a>
                     <a href="#">Contact</a>
+                </li>
+                <li class="footer-link d-none-xl">
+                    <a href="#">Company</a>
+                </li>
+                <li class="footer-link d-none-xl">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="footer-link d-none-xl">
+                    <a href="#">Resources</a>
                 </li>
             </ul>
             <ul class="footer-socials">

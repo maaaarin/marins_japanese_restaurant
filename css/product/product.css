@@ -80,4 +80,74 @@
 .product .product-container .product-information .product-price .product-bag #product-bag-icon {
   width: 6vmin;
   height: 6vmin;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    width: calc(33.3333333333% - 0.8333333333vmin);
+    aspect-ratio: 1/2;
+    flex: none;
+    border-radius: 3.5vmin;
+  }
+  .product .product-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vmin;
+  }
+  .product .product-container .product-tag {
+    font-size: 2.5vmin;
+    padding: 0.35vmin 3.5vmin;
+  }
+  .product .product-container .product-information {
+    padding: 1.5vmin;
+    padding-top: 3.5vmin;
+  }
+  .product .product-container .product-information #product-name {
+    font-size: 3.25vmin;
+  }
+  .product .product-container .product-information .product-price span {
+    font-size: 3.25vmin;
+    padding: 1vmin 1.5vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag {
+    padding: 1.5vmin;
+    border-radius: 1vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag #product-bag-icon {
+    width: 4.5vmin;
+    height: 4.5vmin;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .product {
+    width: calc(16.6666666667% - 1.25vmin);
+    aspect-ratio: 1/2;
+    border-radius: 2.5vmin;
+  }
+  .product .product-container {
+    border-radius: 1.5vmin;
+  }
+  .product .product-container .product-tag {
+    font-size: 2.5vmin;
+    padding: 0.35vmin 2.5vmin;
+  }
+  .product .product-container .product-information {
+    padding: 1.65vmin;
+    padding-top: 3vmin;
+  }
+  .product .product-container .product-information #product-name {
+    font-size: 2.65vmin;
+  }
+  .product .product-container .product-information .product-price span {
+    font-size: 2.75vmin;
+    padding: 0.8vmin 2vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag {
+    padding: 1vmin;
+    border-radius: 0.8vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag #product-bag-icon {
+    width: 4.5vmin;
+    height: 4.5vmin;
+  }
 }/*# sourceMappingURL=product.css.map */

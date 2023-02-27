@@ -1,5 +1,4 @@
 
-
 .reviews-section{
     overflow: hidden;
     margin-top: 10vmin;
@@ -97,8 +96,210 @@
                 padding: 2.5vmin 6.5vmin;
                 margin-top: 1.5vmin;
             }
-
         }
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .reviews-section{
+        margin-top: 12.5vmin;
+    }
+    
+    .reviews-header{
+        gap: 1.5vmin;
+        margin-bottom: 5vmin;
+    
+        #reviews-header-title{
+            font-size: 7.5vmin;
+        }
+    }
+    
+    .reviews-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.5vmin;
+    }
+    
+    .review{
+        width: calc(50% - 2.5vmin / 2);
+        display: flex;
+        flex-direction: row;
+    
+        .review-container{
+            width: 100%;
+            gap: 2.5vmin;
+    
+            .review-profile{
+                width: 40%;
+                margin-bottom: 3.5vmin;
+    
+                #review-profile-name{
+                    font-size: 3vmin;
+                    padding: 1vmin 3vmin;
+                }
+            }
+    
+            .review-information{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3vmin;
+    
+                #review-title{
+                    font-size: 4.5vmin;
+                }
+    
+                #review-comment{
+                    font-size: 3.5vmin;
+                }
+    
+                #review-btn{
+                    font-size: 3.5vmin;
+                    padding: 1.5vmin 3.5vmin;
+                    margin-top: 1.5vmin;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1200px) {
+//     .reviews-section{
+//         margin-top: 5vmin;
+//     }
+    
+//     .reviews-header{
+//         gap: 1.5vmin;
+//         margin-bottom: 3.5vmin;
+    
+//         #reviews-header-title{
+//             font-size: 3.5vmin;
+//         }
+//     }
+    
+//     .reviews-container{
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         gap: 1.5vmin;
+//     }
+    
+//     .review{
+//         width: calc(100% / 3 - 1.5vmin * 2 / 3);
+    
+//         .review-container{
+//             width: 100%;
+//             gap: 1.5vmin;
+//             align-items: flex-start;
+    
+//             .review-profile{
+//                 width: 28.5%;
+//                 margin-bottom: 2.5vmin;
+    
+//                 #review-profile-name{
+//                     font-size: 2vmin;
+//                     padding: .5vmin 2vmin;
+//                 }
+//             }
+    
+//             .review-information{
+//                 width: 100%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 gap: 1.5vmin;
+    
+//                 #review-title{
+//                     font-size: 2.5vmin;
+//                 }
+    
+//                 #review-comment{
+//                     font-size: 2vmin;
+//                     text-align: left;
+//                 }
+    
+//                 #review-btn{
+//                     font-size: 2vmin;
+//                     padding: .75vmin 2.5vmin;
+//                     margin-top: 1vmin;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media screen and (min-width: 1200px) {
+    .reviews-section{
+        margin-top: 5vmin;
+    }
+    
+    .reviews-header{
+        gap: 1.5vmin;
+        margin-bottom: 3.5vmin;
+    
+        #reviews-header-title{
+            font-size: 5vmin;
+        }
+    }
+    
+    .reviews-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5vmin;
+    }
+    
+    .review{
+        width: calc(100% / 3 - 1.5vmin * 2 / 3);
+    
+        .review-container{
+            width: 100%;
+            gap: 1.5vmin;
+            align-items: flex-start;
+    
+            .review-profile{
+                width: 28.5%;
+                margin-bottom: 3svmin;
+    
+                #review-profile-name{
+                    font-size: 2.5vmin;
+                    padding: .5vmin 2vmin;
+                }
+            }
+    
+            .review-information{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5vmin;
+    
+                #review-title{
+                    font-size: 3vmin;
+                }
+    
+                #review-comment{
+                    font-size: 3vmin;
+                    text-align: left;
+                }
+    
+                #review-btn{
+                    font-size: 3vmin;
+                    padding: .75vmin 3vmin;
+                    margin-top: 1.5vmin;
+                }
+            }
+        }
     }
 }

@@ -19,6 +19,7 @@
     background-color: #1D1D1B;
     border-radius: 5vmin;
     flex: none;
+    cursor: pointer;
     
     .category-information{
         width: 50%;
@@ -49,6 +50,116 @@
         img{
             width: 115%;
             border-bottom-right-radius: 5vmin;
+        }
+    }
+}
+
+//Queries
+
+@media only screen and (min-width: 768px){
+    .categories-section{
+        width: 100%;
+        margin-top: 5vmin;
+    }
+    
+    .categories-container{
+        width: 100%;
+        gap: 2.5vmin;
+        padding-top: 1.5vmin;
+        overflow: hidden;
+    }
+    
+    .category{
+        width: calc(50% - 2.5vmin / 3);
+        aspect-ratio: 1 / .40;
+        border-radius: 2.5vmin;
+        
+        .category-information{
+            padding: 3.5vmin;
+    
+            #category-title{
+                font-size: 5vmin;
+            }
+    
+            #category-subtitle{
+                font-size: 3.5vmin;
+            }
+        }
+
+        .category-img{
+            img{
+                border-bottom-right-radius: 2.5vmin;
+            }
+        }
+    }
+}
+
+// @media only screen and (min-width: 1440px){
+//     .categories-section{
+//         width: 100%;
+//         margin-top: 2.5vmin;
+//     }
+    
+//     .categories-container{
+//         gap: 1.5vmin;
+//         padding-top: 1.5vmin;
+//     }
+    
+//     .category{
+//         width: calc(100% / 3 - 3vmin / 3);
+//         border-radius: 2.5vmin;
+        
+//         .category-information{
+//             padding: 2.25vmin;
+    
+//             #category-title{
+//                 font-size: 3.5vmin;
+//             }
+    
+//             #category-subtitle{
+//                 font-size: 2.25vmin;
+//             }
+//         }
+
+//         .category-img{
+//             img{
+//                 border-bottom-right-radius: 2.5vmin;
+//             }
+//         }
+//     }
+// }
+
+@media only screen and (min-width: 1440px){
+    .categories-section{
+        width: 100%;
+        margin-top: 2.5vmin;
+    }
+    
+    .categories-container{
+        gap: 1.5vmin;
+        padding-top: 1.5vmin;
+    }
+    
+    .category{
+        width: calc(100% / 3 - 3vmin / 3);
+        border-radius: 2.5vmin;
+        
+        .category-information{
+            padding: 3vmin;
+    
+            #category-title{
+                font-size: 4.5vmin;
+            }
+    
+            #category-subtitle{
+                font-size: 3.25vmin;
+            }
+        }
+
+        .category-img{
+            img{
+                border-bottom-right-radius: 2.5vmin;
+            }
         }
     }
 }

@@ -25,6 +25,7 @@
     flex-wrap: nowrap;
     gap: 3.5vmin;
     overflow: hidden;
+    padding-bottom: 2.5vmin;
 }
 
 .recommendations-slider{
@@ -52,3 +53,92 @@
     }
 }
 
+// Queries
+
+@media only screen and (min-width: 768px) {
+    .recommendations-section{
+        margin-top: 5vmin;
+    }
+    
+    .recommendations-header{
+        gap: 1.5vmin;
+        margin-bottom: 2.5vmin;
+    
+        #recommendations-header-title{
+            font-size: 6.5vmin;
+        }
+    }
+    
+    .recommendations-container{
+        gap: 2.5vmin;
+    }
+    
+    .recommendations-slider{
+        width: 100%;
+        gap: 1.5vmin;
+        margin-top: 1.5vmin;
+    
+        .slider{
+            width: 3.5vmin;
+            height: 3.5vmin;
+        }
+    
+        .active{
+            width: 10vmin;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .recommendations-section{
+        margin-top: 2.5vmin;
+    }
+    
+    .recommendations-header{
+        margin-bottom: 2.5vmin;
+    
+        #recommendations-header-title{
+            font-size: 4.5vmin;
+        }
+    }
+    
+    .recommendations-container{
+        gap: 1.5vmin;
+    }
+}
+
+// @media only screen and (min-width: 1200px){
+//     .recommendations-section{
+//         margin-top: 2.5vmin;
+//     }
+    
+//     .recommendations-header{
+//         margin-bottom: 2.5vmin;
+    
+//         #recommendations-header-title{
+//             font-size: 3.5vmin;
+//         }
+//     }
+    
+//     .recommendations-container{
+//         gap: 1.5vmin;
+//     }
+// }
+
+@media only screen and (min-width: 1200px){
+    .recommendations-section{
+        margin-top: 5vmin;
+    }
+    
+    .recommendations-header{
+        margin-bottom: 2.5vmin;
+    
+        #recommendations-header-title{
+            font-size: 5vmin;
+        }
+    }
+    
+    .recommendations-container{
+        gap: 1.5vmin;
+    }
+}

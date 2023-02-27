@@ -29,7 +29,7 @@ nav{
         align-items: center;
         text-decoration: none;
         font-weight: 100;
-        gap: 1.5vmin;
+        gap: 2.5vmin;
 
         a{
             font-size: 2.75vmin;
@@ -53,6 +53,12 @@ nav{
     #nav-bag-icon{
         width: 10vmin;
         height: 10vmin;
+        cursor: pointer;
+    }
+
+    #nav-search-icon{
+        width: 4vmin;
+        height: 4vmin;
         cursor: pointer;
     }
 
