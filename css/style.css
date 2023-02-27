@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
-
+@import './banners/banners.css';
 @import './header/header.css';
 @import './hero/hero.css';
 @import './cards/cards.css';

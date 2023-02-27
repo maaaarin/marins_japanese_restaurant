@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    gap: 50px;
+    border-radius: 20px;
+    margin-top: 20vmin;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E3FF;
+    width: 50%;  
+    border-radius: 20px;  
+    height: 60vmin;
+}
+.sushi{
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100%;
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 5.5vmin;
+    padding: 15px;
+
+}
+@media only screen and (min-width:768px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10vmin;
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+    .parrafo{
+        display: flex;
+        flex-direction: column;
+        margin: 80px;
+        font-size: 35px;
+        
+    
+    }
+}
+@media only screen and(min-width:992px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column-reverse;
+    
+
+
+    }
+    .sushi{
+        width: 80%;
+    }
+    .parrafo{
+        display: flex;
+        flex-direction: column;
+        margin: 80px;
+        font-size: 35px;
+        
+    
+    }
+    
+}
+@media only screen and (min-width:1200px){
+
+    .contenedor{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .imagen{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .parrafo {
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+
+        
+        
+    }
+}
