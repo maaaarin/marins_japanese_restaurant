@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    gap: 10px;
+    gap: 50px;
     border-radius: 20px;
     margin-top: 20vmin;
 }
@@ -28,6 +28,7 @@
 .sushi{
     display: flex;
     flex-direction: column-reverse;
+
     width: 100%;
 }
 .parrafo{
@@ -38,34 +39,49 @@
     color: white;
     text-align: center;
     font-size: 5.5vmin;
-    padding: 55px;
-    gap: 4.5px;
-}
+    padding: 15px;
 
-.parrafo h2{
-    font-weight: bold;
 }
-
-@media only screen and (min-width:768px) {
+.imagen2{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E3FF;
+    width: 50%;  
+    border-radius: 20px;  
+    height: 60vmin;
+}
+.parrafo2{
+    background-color: #C4E3FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 5.5vmin;
+    padding: 15px;
+    border-radius: 20px;
+}
+@media only screen and (min-width:768px) {  
     .contenedor{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 7.5vmin;
+        margin-top: 10vmin;
     }
     .imagen{
         display: flex;
-        justify-content: end;
-    }
+        flex-direction: column-reverse;
 
-    .sushi{
-        width: 85%;
-    }
 
+    }
     .parrafo{
         display: flex;
         flex-direction: column;
+        margin: 80px;
         font-size: 35px;
-        padding: 25px;
+        
     
     }
 }
@@ -77,6 +93,7 @@
     .imagen{
         display: flex;
         flex-direction: column-reverse;
+    
 
 
     }
@@ -88,58 +105,29 @@
         flex-direction: column;
         margin: 80px;
         font-size: 35px;
+        
+    
     }
     
 }
-
-/* @media only screen and (min-width:1200px){
-
-    .contenedor{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 2.5vmin;
-        padding: 60px 0;
-        border-radius: 50px;
-    }
-    .imagen{
-        display: flex;
-        justify-content: flex-end;
-        height: 50vmin;
-    }
-
-    .sushi{
-        width: 115%;
-    }
-
-    .parrafo {
-        display: flex;
-        align-items: flex-start;
-        text-align: start;
-    }
-} */
-
 @media only screen and (min-width:1200px){
 
     .contenedor{
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 10vmin;
-        padding: 60px 0;
-        border-radius: 50px;
+
     }
     .imagen{
         display: flex;
         justify-content: flex-end;
-        height: 80vmin;
-    }
 
-    .sushi{
-        width: 100%;
     }
-
     .parrafo {
         display: flex;
         align-items: flex-start;
         text-align: start;
+
+        
+        
     }
 }
