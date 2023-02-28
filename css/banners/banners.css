@@ -16,6 +16,9 @@
     border-radius: 20px;
     margin-top: 20vmin;
 }
+.azul{
+    background-color: #C4E3FF;
+}
 .imagen{
     display: flex;
     justify-content: center;
@@ -30,6 +33,9 @@
     flex-direction: column-reverse;
 
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; 
 }
 .parrafo{
     display: flex;
@@ -42,28 +48,10 @@
     padding: 15px;
 
 }
-.imagen2{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C4E3FF;
-    width: 50%;  
-    border-radius: 20px;  
-    height: 60vmin;
+.negro{
+    color: black;
 }
-.parrafo2{
-    background-color: #C4E3FF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: 5.5vmin;
-    padding: 15px;
-    border-radius: 20px;
-}
+
 @media only screen and (min-width:768px) {  
     .contenedor{
         display: flex;
@@ -74,16 +62,15 @@
         display: flex;
         flex-direction: column-reverse;
 
-
-    }
-    .parrafo{
-        display: flex;
-        flex-direction: column;
-        margin: 80px;
-        font-size: 35px;
-        
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    font-size: 35px;
     
-    }
+
+}
 }
 @media only screen and(min-width:992px) {
     .contenedor{
@@ -115,12 +102,14 @@
     .contenedor{
         display: flex;
         flex-direction: row-reverse;
-
+        margin-top: 10vmin;
+        padding: 45px 0;
+        border-radius: 50px;
     }
     .imagen{
         display: flex;
         justify-content: flex-end;
-
+        height: 60vmin;
     }
     .parrafo {
         display: flex;
