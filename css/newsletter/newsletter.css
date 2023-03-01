@@ -1,0 +1,15 @@
+.newsletter-container {
+  width: 100%;
+  aspect-ratio: 1/0.2;
+  border-radius: 5vmin;
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter-container {
+    width: 100%;
+    aspect-ratio: 1/0.2;
+    border-radius: 5vmin;
+    background-color: lightgray;
+  }
+}/*# sourceMappingURL=newsletter.css.map */

@@ -88,18 +88,20 @@
   }
   .category {
     width: calc(33.3333333333% - 1vmin);
+    aspect-ratio: 1/0.35;
     border-radius: 2.5vmin;
   }
   .category .category-information {
     padding: 3vmin;
   }
   .category .category-information #category-title {
-    font-size: 4.5vmin;
+    font-size: 4vmin;
   }
   .category .category-information #category-subtitle {
-    font-size: 3.25vmin;
+    font-size: 3vmin;
   }
   .category .category-img img {
+    width: 100%;
     border-bottom-right-radius: 2.5vmin;
   }
 }/*# sourceMappingURL=categories.css.map */

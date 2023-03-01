@@ -8,6 +8,8 @@
 @import './product/product.css';
 @import './recommendations/recommendations.css';
 @import './footer/footer.css';
+@import './newsletter/newsletter.css';
+@import './latest/latest.css';
 
 *{
     font-family: 'Satoshi', sans-serif;

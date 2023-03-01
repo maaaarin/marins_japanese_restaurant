@@ -58,7 +58,6 @@
 
             #product-name{
                 font-size: 4.5vmin;
-                white-space: nowrap;
             }
 
             .product-price{
@@ -75,6 +74,7 @@
                 }
 
                 .product-bag{
+                    cursor: pointer;
                     border: none;
                     outline: none;
                     background-color: #C4E3FF;
@@ -142,51 +142,51 @@
     }
 }
 
-// @media only screen and (min-width:1200px){
-//     .product{
-//         width: calc(100% / 5 - 6vmin / 5);
-//         aspect-ratio: 1 / 2;
-//         border-radius: 2.5vmin;
-    
-//         .product-container{
-//             border-radius: 1.5vmin;
-
-//             .product-tag{
-//                 font-size: 1.75vmin;
-//                 padding: .35vmin 2.5vmin;
-//             }
-    
-//             .product-information{
-//                 padding: 1vmin;
-//                 padding-top: 2.5vmin;
-    
-//                 #product-name{
-//                     font-size: 2.25vmin;
-//                 }
-    
-//                 .product-price{
-    
-//                     span{
-//                         font-size: 2.15vmin;
-//                         padding: 0.8vmin 1.5vmin;
-//                     }
-    
-//                     .product-bag{
-//                         padding: .8vmin;
-//                         border-radius: 1vmin;
-    
-//                         #product-bag-icon{
-//                             width: 3vmin;
-//                             height: 3vmin;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 @media only screen and (min-width:1200px){
+    .product{
+        width: calc(100% / 5 - 6vmin / 5);
+        aspect-ratio: 1 / 2;
+        border-radius: 2.5vmin;
+    
+        .product-container{
+            border-radius: 1.5vmin;
+
+            .product-tag{
+                font-size: 1.75vmin;
+                padding: .35vmin 2.5vmin;
+            }
+    
+            .product-information{
+                padding: 1vmin;
+                padding-top: 2.5vmin;
+    
+                #product-name{
+                    font-size: 2.25vmin;
+                }
+    
+                .product-price{
+    
+                    span{
+                        font-size: 2.15vmin;
+                        padding: 0.8vmin 1.5vmin;
+                    }
+    
+                    .product-bag{
+                        padding: .8vmin;
+                        border-radius: 1vmin;
+    
+                        #product-bag-icon{
+                            width: 3vmin;
+                            height: 3vmin;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1440px){
     .product{
         width: calc(100% / 6 - 7.5vmin / 6);
         aspect-ratio: 1 / 2;
@@ -211,17 +211,17 @@
                 .product-price{
     
                     span{
-                        font-size: 2.75vmin;
-                        padding: 0.8vmin 2vmin;
+                        font-size: 2.65vmin;
+                        padding: 0.8vmin 1.65vmin;
                     }
     
                     .product-bag{
-                        padding: 1vmin;
+                        padding: .8vmin;
                         border-radius: .8vmin;
     
                         #product-bag-icon{
-                            width: 4.5vmin;
-                            height: 4.5vmin;
+                            width: 4.15vmin;
+                            height: 4.15vmin;
                         }
                     }
                 }

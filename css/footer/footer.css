@@ -95,7 +95,7 @@ footer {
 }
 @media only screen and (min-width: 1200px) {
   footer {
-    margin-top: 2.5vmin;
+    margin-top: 5vmin;
     border-top-right-radius: 3.5vmin;
     border-top-left-radius: 3.5vmin;
   }
@@ -125,7 +125,7 @@ footer {
     gap: 3.5vmin;
   }
   .footer-links .footer-link a {
-    font-size: 3.65vmin;
+    font-size: 3.25vmin;
   }
   .footer-links .footer-link #footer-logo {
     position: absolute;
