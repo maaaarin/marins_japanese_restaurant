@@ -39,7 +39,8 @@
     border: none;
     font-size:15px;
     padding: 10px 20px;
-
+    cursor: pointer;
+    font-weight: bold;
 }
 .iconos{
     display: flex; 
@@ -54,7 +55,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-top: 10vmin;
+        margin-top: 7.5vmin;
         gap: 2.5vmin;
     }
     .texto{
@@ -83,20 +84,178 @@
         
     }
     .borde{
-       
-       gap: 1em;
-       width: fit-content;
-       background-color: #C4E3FF;
+        gap: 1em;
+        width: fit-content;
+        background-color: #C4E3FF;
         border-radius: 20px;    
         height: fit-content;
         border: none;
-        font-size:15px;
+        font-size:20px;
         padding: 10px 20px;
     
     }
     .iconos{
         display: flex; 
         width: 100px;
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .advantages-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2.5vmin;
+        gap: 2.5vmin;
+    }
+    .texto{
+        width: calc(50% - 2.5vmin / 2);
+        aspect-ratio: 1 / 1;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        background-color: #5e5e5e10;
+        font-size: 20px;
+        border-radius: 20px;
+        position: relative;
+        gap: 1em;
+        padding: 25px;
+    
+    }
+    
+    .texto p{
+        font-size: 25px;
+    }
+    
+    #texto-titulo{
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .borde{
+        gap: 1em;
+        width: fit-content;
+        background-color: #C4E3FF;
+        border-radius: 20px;    
+        height: fit-content;
+        border: none;
+        font-size:25px;
+        padding: 10px 20px;
+    
+    }
+    .iconos{
+        display: flex; 
+        width: 125px;
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .advantages-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 2.5vmin;
+        gap: 2.5vmin;
+    }
+    .texto{
+        width: calc(50% - 2.5vmin / 2);
+        aspect-ratio: 1 / 1;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        background-color: #5e5e5e10;
+        font-size: 20px;
+        border-radius: 20px;
+        position: relative;
+        gap: 1em;
+        padding: 25px;
+    
+    }
+    
+    .texto p{
+        font-size: 28.5px;
+    }
+    
+    #texto-titulo{
+        font-weight: bold;
+        font-size: 35px;
+        
+    }
+    .borde{
+        gap: 1em;
+        width: fit-content;
+        background-color: #C4E3FF;
+        border-radius: 100px;    
+        height: fit-content;
+        border: none;
+        font-size: 35px;
+        padding: 10px 20px;
+    
+    }
+    .iconos{
+        display: flex; 
+        width: 125px;
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .advantages-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 3.5vmin;
+        gap: 2.5vmin;
+    }
+    .texto{
+        width: calc(50% - 2.5vmin / 2);
+            aspect-ratio: 1 / .60;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        background-color: #5e5e5e10;
+        font-size: 20px;
+        border-radius: 20px;
+        position: relative;
+        gap: 1em;
+        padding: 25px;
+    
+    }
+    
+    .texto p{
+        font-size: 28.5px;
+    }
+    
+    #texto-titulo{
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .borde{
+        gap: 1em;
+        width: fit-content;
+        background-color: #C4E3FF;
+        border-radius: 100px;    
+        height: fit-content;
+        border: none;
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .iconos{
+        display: flex; 
+        width: 135px;
         position: absolute;
         right: -20px;
         bottom: -20px;
