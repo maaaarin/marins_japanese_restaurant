@@ -126,7 +126,7 @@ footer {
     gap: 3.5vmin;
   }
   .footer-links .footer-link a {
-    font-size: 3.25vmin;
+    font-size: 3vmin;
   }
   .footer-links .footer-link #footer-logo {
     position: absolute;
@@ -134,7 +134,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20vmin;
+    width: 15vmin;
     color: #fff;
   }
   .footer-socials {
