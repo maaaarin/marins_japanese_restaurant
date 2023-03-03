@@ -65,6 +65,7 @@ footer{
     footer{
         border-top-right-radius: 6.5vmin;
         border-top-left-radius: 6.5vmin;
+        margin-top: 5vmin;
     }
 
     .footer-container{
@@ -115,74 +116,10 @@ footer{
     }
 }
 
-// @media only screen and (min-width: 1200px){
-    
-//     footer{
-//         margin-top: 5vmin;
-//         border-top-right-radius: 3.5vmin;
-//         border-top-left-radius: 3.5vmin;
-//     }
-
-//     .footer-container{
-//         width: 100%;
-//         padding-top: 5vmin;
-//         padding-bottom: 4.5vmin;
-//         gap: 6.5vmin;
-
-//         #footer-logo{
-//             width: 17.5%;
-//         }
-
-//         #footer-legal{
-//             font-size: 2.5vmin;
-//         }
-//     }
-
-//     .footer-links{
-//         width: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         justify-content: space-between;
-//         flex-wrap: nowrap;
-//         gap: 5vmin;
-
-//         .footer-link{
-//             width: calc(100% / 3);
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             gap: 2.5vmin;
-
-//             a{
-//                 color: #fff;
-//                 font-size: 2.5vmin;
-//                 text-decoration: none;
-//                 font-weight: 100;
-//             }
-
-//             #footer-logo{
-//                 width: 60%;
-//             }
-//         }
-//     }
-
-//     .footer-socials{
-//         gap: 2.5vmin;
-
-//         .footer-social{
-//             svg{
-//                 width: 4.5vmin;
-//                 height: 4.5vmin;
-//             }
-//         }
-//     }
-// }
-
 @media only screen and (min-width: 1200px){
     
     footer{
-        margin-top: 2.5vmin;
+        margin-top: 5vmin;
         border-top-right-radius: 3.5vmin;
         border-top-left-radius: 3.5vmin;
     }
@@ -214,9 +151,8 @@ footer{
             justify-content: center;
             gap: 3.5vmin;
 
-
             a{
-                font-size: 3.65vmin;
+                font-size: 3vmin;
             }
 
             #footer-logo{
@@ -225,7 +161,7 @@ footer{
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                width: 20vmin;
+                width: 15vmin;
                 color: #fff;
             }
         }
@@ -238,6 +174,70 @@ footer{
             svg{
                 width: 4.5vmin;
                 height: 4.5vmin;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    
+    footer{
+        margin-top: 5vmin;
+        border-top-right-radius: 3.5vmin;
+        border-top-left-radius: 3.5vmin;
+    }
+
+    .footer-container{
+        width: 100%;
+        padding-top: 5vmin;
+        padding-bottom: 4vmin;
+        gap: 6.5vmin;
+
+        #footer-legal{
+            font-size: 2.5vmin;
+        }
+    }
+
+    .footer-links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 2.5vmin;
+        position: relative;
+
+        .footer-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3.5vmin;
+
+
+            a{
+                font-size: 1.45vmax;
+            }
+
+            #footer-logo{
+                position: absolute;
+                top: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 16.5vmin;
+                color: #fff;
+            }
+        }
+    }
+
+    .footer-socials{
+        gap: 3.5vmin;
+
+        .footer-social{
+            svg{
+                width: 4.25vmin;
+                height: 4.25vmin;
             }
         }
     }

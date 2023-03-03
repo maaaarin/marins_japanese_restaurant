@@ -96,6 +96,54 @@ recommendations_container.addEventListener('touchmove', (e) => {
     }
 );
 
+// Recommendations Slider
+
+var latest_container = document.querySelector('.latest-container'),
+    latest_slider = document.querySelector('.latest-slider'),
+    latest_section = document.querySelector('.latest-section');
+
+var position_latest = 0,
+    limit_latest = (latest_container.childElementCount) - 2,
+    x_latest,
+    x_prev_latest,
+    touched_latest;
+
+latest_container.addEventListener('touchstart', (e) => {
+    x_prev_latest = e.touches[0].clientX;
+    touched_latest = true;
+});
+
+var padding_latest_container = parseFloat(window.getComputedStyle(latest_container).getPropertyValue('padding-left'));
+
+latest_container.addEventListener('touchmove', (e) => {
+    x_latest = e.touches[0].clientX;
+    if (touched_latest){
+        if (x_latest < x_prev_latest) {
+            // Right
+            if (position_latest !== limit_latest){
+                position_latest++;
+                let width_product = latest_container.children[position_latest].getBoundingClientRect().x,
+                    gap_product = latest_container.getBoundingClientRect().x;
+                latest_container.scrollLeft += width_product - gap_product - padding_latest_container;
+                latest_slider.children[position_latest-1].classList.remove('active');
+                latest_slider.children[position_latest].classList.add('active');
+            }
+        } else if (x_latest > x_prev_latest) {
+            // Left
+            if (position_latest !== 0){
+                position_latest--;
+                let width_product = latest_container.children[position_latest].getBoundingClientRect().x,
+                    gap_product = latest_container.getBoundingClientRect().x;
+                latest_container.scrollLeft += width_product - gap_product - padding_latest_container;
+                latest_slider.children[position_latest+1].classList.remove('active');
+                latest_slider.children[position_latest].classList.add('active');
+            }
+        }
+    }
+    touched_latest = false;
+    }
+);
+
 // Categories Slider
 
 var categories_container = document.querySelector('.categories-container'),
@@ -141,6 +189,12 @@ categories_container.addEventListener('touchmove', (e) => {
 
 
 // Header on Scroll
+
+if (window.scrollY > 0){
+    document.getElementsByTagName('header')[0].classList.add('header-scroll');
+} else {
+    document.getElementsByTagName('header')[0].classList.remove('header-scroll');
+}
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0){

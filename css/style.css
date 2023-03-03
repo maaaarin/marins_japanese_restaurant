@@ -9,6 +9,9 @@
 @import './recommendations/recommendations.css';
 @import './footer/footer.css';
 @import './advantages/advantages.css';
+@import './advantages/advantages.css';
+@import './newsletter/newsletter.css';
+@import './latest/latest.css';
 
 *{
     font-family: 'Satoshi', sans-serif;
@@ -26,6 +29,7 @@
     padding-left: 6.5%;
 }
 
+
 .d-lg, .d-md, .d-xl{
     display: none !important;
 }
@@ -34,6 +38,8 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+
     .d-md{
         display: flex !important;
     }
@@ -70,5 +76,20 @@
     .container{
         padding-right: 10% !important;
         padding-left: 10% !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .d-xl{
+        display: flex !important;
+    }
+
+    .d-none-xl{
+        display: none !important;
+    }
+
+    .container{
+        padding-right: 12.5% !important;
+        padding-left: 12.5% !important;
     }
 }

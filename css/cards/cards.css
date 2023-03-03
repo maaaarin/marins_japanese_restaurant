@@ -32,7 +32,7 @@
 
 .card {
   width: 100%;
-  aspect-ratio: 1/1.55;
+  height: 70vmax;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 .card .card-img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   display: flex;
   align-items: flex-end;
   border-radius: 4.5vmin;
@@ -66,12 +66,13 @@
   padding: 5vmin 0;
 }
 .card .card-information #card-title {
-  font-size: 7vmin;
+  font-size: 3.5vmax;
   font-weight: bold;
   margin-bottom: 3.5vmin;
+  white-space: nowrap;
 }
 .card .card-information #card-description {
-  font-size: 5.5vmin;
+  font-size: 2.8vmax;
   font-weight: 100;
 }
 
@@ -118,7 +119,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5vmin;
+    margin-bottom: 2.5vmin;
   }
   .cards-header #cards-header-title {
     font-size: 6.5vmin;
@@ -136,27 +137,92 @@
   }
   .card {
     width: calc(50% - 0.8333333333vmin);
-    aspect-ratio: 1/1.75;
+    height: 60vmax;
     padding-bottom: 1.5vmin;
     border-radius: 2.5vmin;
     padding: 2.5vmin;
   }
   .card .card-img {
     border-radius: 2.5vmin;
+    height: 55%;
   }
   .card .card-img #card-img {
     border-radius: 2.5vmin;
   }
   .card .card-information {
     padding: 2.5vmin 0;
+    height: 45%;
   }
   .card .card-information #card-title {
-    font-size: 4.5vmin;
+    font-size: 2.85vmax;
     font-weight: bold;
     margin-bottom: 1.5vmin;
   }
   .card .card-information #card-description {
-    font-size: 3.35vmin;
+    font-size: 2.55vmax;
+  }
+  .cards-slider {
+    gap: 1.5vmin;
+  }
+  .cards-slider .slider {
+    width: 3.5vmin;
+    height: 3.5vmin;
+  }
+  .cards-slider .active {
+    width: 10vmin;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cards-section {
+    width: 100%;
+    margin-top: 2.5vmin;
+  }
+  .cards-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    margin-bottom: 1.5vmin;
+  }
+  .cards-header #cards-header-title {
+    font-size: 5vmax;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .cards-header #cards-header-subtitle {
+    font-size: 4vmax;
+    font-weight: 100;
+  }
+  .cards-container {
+    width: 100%;
+    gap: 1.5vmin;
+    padding: 4.5vmin 0;
+  }
+  .card {
+    width: calc(33.3333333333% - 1vmin);
+    height: 50vmax;
+    padding-bottom: 1.5vmin;
+    border-radius: 1.5vmin;
+    padding: 1.5vmin;
+  }
+  .card .card-img {
+    border-radius: 1.5vmin;
+    height: 55%;
+  }
+  .card .card-img #card-img {
+    border-radius: 1.5vmin;
+  }
+  .card .card-information {
+    padding: 2.5vmin 0;
+    height: 45%;
+  }
+  .card .card-information #card-title {
+    font-size: 2.45vmax;
+    font-weight: bold;
+    margin-bottom: 1.5vmin;
+  }
+  .card .card-information #card-description {
+    font-size: 1.9vmax;
   }
   .cards-slider {
     gap: 1.5vmin;
@@ -172,12 +238,14 @@
 @media only screen and (min-width: 1200px) {
   .cards-section {
     width: 100%;
-    margin-top: 5vmin;
+    margin-top: 2.5vmin;
   }
   .cards-header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1vmin;
+    margin-bottom: 1.5vmin;
   }
   .cards-header #cards-header-title {
     font-size: 5vmin;
@@ -185,37 +253,111 @@
     white-space: nowrap;
   }
   .cards-header #cards-header-subtitle {
-    font-size: 3.5vmin;
+    font-size: 4vmin;
     font-weight: 100;
   }
   .cards-container {
     width: 100%;
-    gap: 2.5vmin;
-    padding: 5.5vmin 0;
-    margin-top: 1.5vmin;
+    gap: 1.5vmin;
+    padding: 3.5vmin 0;
   }
   .card {
-    width: calc(33.3333333333% - 1.6666666667vmin);
-    aspect-ratio: 1/1.6;
+    width: calc(33.3333333333% - 1vmin);
+    height: 45vmax;
     padding-bottom: 1.5vmin;
-    border-radius: 2.5vmin;
-    padding: 3vmin;
+    border-radius: 1.5vmin;
+    padding: 2vmin;
   }
   .card .card-img {
+    border-radius: 1.5vmin;
     height: 60%;
-    border-radius: 2.5vmin;
   }
   .card .card-img #card-img {
-    border-radius: 2.5vmin;
+    border-radius: 1.5vmin;
   }
   .card .card-information {
     padding: 2.5vmin 0;
+    height: 40%;
   }
   .card .card-information #card-title {
-    font-size: 3.5vmin;
+    font-size: 2.15vmax;
+    font-weight: bold;
     margin-bottom: 1.5vmin;
   }
   .card .card-information #card-description {
-    font-size: 3.25vmin;
+    font-size: 1.7vmax;
+  }
+  .cards-slider {
+    gap: 1.5vmin;
+  }
+  .cards-slider .slider {
+    width: 3.5vmin;
+    height: 3.5vmin;
+  }
+  .cards-slider .active {
+    width: 10vmin;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .cards-section {
+    width: 100%;
+    margin-top: 2.5vmin;
+  }
+  .cards-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    margin-bottom: 4.5vmin;
+  }
+  .cards-header #cards-header-title {
+    font-size: 5vmin;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .cards-header #cards-header-subtitle {
+    font-size: 4vmin;
+    font-weight: 100;
+  }
+  .cards-container {
+    width: 100%;
+    gap: 2vmin;
+    padding: 5vmin 0;
+  }
+  .card {
+    width: calc(33.3333333333% - 1.3333333333vmin);
+    height: 40vmax;
+    padding-bottom: 1.5vmin;
+    border-radius: 1.5vmin;
+    padding: 2.25vmin;
+  }
+  .card .card-img {
+    border-radius: 1.5vmin;
+    height: 65%;
+  }
+  .card .card-img #card-img {
+    border-radius: 1.5vmin;
+  }
+  .card .card-information {
+    padding: 2.5vmin 0;
+    height: 35%;
+  }
+  .card .card-information #card-title {
+    font-size: 1.65vmax;
+    font-weight: bold;
+    margin-bottom: 1.5vmin;
+  }
+  .card .card-information #card-description {
+    font-size: 1.6vmax;
+  }
+  .cards-slider {
+    gap: 1.5vmin;
+  }
+  .cards-slider .slider {
+    width: 3.5vmin;
+    height: 3.5vmin;
+  }
+  .cards-slider .active {
+    width: 10vmin;
   }
 }/*# sourceMappingURL=cards.css.map */

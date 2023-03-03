@@ -1,0 +1,31 @@
+.newsletter-container {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  border-radius: 5vmin;
+  background-color: lightgray;
+  margin-top: 10vmin;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter-container {
+    margin-top: 5vmin;
+    aspect-ratio: 1/0.5;
+    border-radius: 2.5vmin;
+  }
+}
+@media screen and (min-width: 998px) {
+  .newsletter-container {
+    margin-top: 2.5vmin;
+    aspect-ratio: 1/0.5;
+    border-radius: 2.5vmin;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter-container {
+    width: 100%;
+    margin-top: 2.5vmin;
+    aspect-ratio: 1/0.3;
+    border-radius: 2.5vmin;
+    background-color: lightgray;
+  }
+}/*# sourceMappingURL=newsletter.css.map */
