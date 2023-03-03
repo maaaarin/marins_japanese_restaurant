@@ -190,6 +190,12 @@ categories_container.addEventListener('touchmove', (e) => {
 
 // Header on Scroll
 
+if (window.scrollY > 0){
+    document.getElementsByTagName('header')[0].classList.add('header-scroll');
+} else {
+    document.getElementsByTagName('header')[0].classList.remove('header-scroll');
+}
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0){
         document.getElementsByTagName('header')[0].classList.add('header-scroll');

@@ -37,6 +37,7 @@
         #category-subtitle{
             font-size: 6vmin;
             color: #fff;
+            white-space: nowrap;
         }
     }
 
@@ -94,40 +95,44 @@
     }
 }
 
-// @media only screen and (min-width: 1440px){
-//     .categories-section{
-//         width: 100%;
-//         margin-top: 2.5vmin;
-//     }
+@media only screen and (min-width: 992px){
+    .categories-section{
+        width: 100%;
+        margin-top: 5vmin;
+    }
     
-//     .categories-container{
-//         gap: 1.5vmin;
-//         padding-top: 1.5vmin;
-//     }
+    .categories-container{
+        width: 100%;
+        gap: 1.5vmin;
+        padding-top: 1.5vmin;
+        overflow: hidden;
+    }
     
-//     .category{
-//         width: calc(100% / 3 - 3vmin / 3);
-//         border-radius: 2.5vmin;
+    .category{
+        width: calc(100% / 3 - 1.5vmin * 2 / 3);
+        aspect-ratio: 1 / .40;
+        border-radius: 1.5vmin;
         
-//         .category-information{
-//             padding: 2.25vmin;
+        .category-information{
+            padding: 2.25vmin;
     
-//             #category-title{
-//                 font-size: 3.5vmin;
-//             }
+            #category-title{
+                font-size: 3.5vmin;
+            }
     
-//             #category-subtitle{
-//                 font-size: 2.25vmin;
-//             }
-//         }
+            #category-subtitle{
+                font-size: 2vmin;
+            }
+        }
 
-//         .category-img{
-//             img{
-//                 border-bottom-right-radius: 2.5vmin;
-//             }
-//         }
-//     }
-// }
+        .category-img{
+            img{
+                width: 100%;
+                border-bottom-right-radius: 2.5vmin;
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 1440px){
     .categories-section{
@@ -141,9 +146,9 @@
     }
     
     .category{
-        width: calc(100% / 3 - 3vmin / 3);
+        width: calc(100% / 3 - 1.5vmin * 2 / 3);
         aspect-ratio: 1 / .35;
-        border-radius: 2.5vmin;
+        border-radius: 2vmin;
         
         .category-information{
             padding: 3vmin;

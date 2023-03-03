@@ -26,6 +26,7 @@
     gap: 3.5vmin;
     overflow: hidden;
     padding-bottom: 2.5vmin;
+    padding-top: 4.5vmin;
 }
 
 .recommendations-slider{
@@ -89,13 +90,13 @@
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 998px){
     .recommendations-section{
         margin-top: 2.5vmin;
     }
     
     .recommendations-header{
-        margin-bottom: 2.5vmin;
+        margin-bottom: 1vmin;
     
         #recommendations-header-title{
             font-size: 4.5vmin;
@@ -107,31 +108,31 @@
     }
 }
 
-// @media only screen and (min-width: 1200px){
-//     .recommendations-section{
-//         margin-top: 2.5vmin;
-//     }
-    
-//     .recommendations-header{
-//         margin-bottom: 2.5vmin;
-    
-//         #recommendations-header-title{
-//             font-size: 3.5vmin;
-//         }
-//     }
-    
-//     .recommendations-container{
-//         gap: 1.5vmin;
-//     }
-// }
-
 @media only screen and (min-width: 1200px){
     .recommendations-section{
         margin-top: 5vmin;
     }
     
     .recommendations-header{
-        margin-bottom: 2.5vmin;
+        margin-bottom: .5vmin;
+    
+        #recommendations-header-title{
+            font-size: 5vmin;
+        }
+    }
+    
+    .recommendations-container{
+        gap: 1.5vmin;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .recommendations-section{
+        margin-top: 5vmin;
+    }
+    
+    .recommendations-header{
+        margin-bottom: .5vmin;
     
         #recommendations-header-title{
             font-size: 5vmin;

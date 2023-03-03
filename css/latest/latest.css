@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5vmin;
-  margin-bottom: 5vmin;
+  margin-bottom: 2.5vmin;
 }
 .latest-header #latest-header-title {
   font-size: 9vmin;
@@ -24,6 +24,7 @@
   gap: 3.5vmin;
   overflow: hidden;
   padding-bottom: 2.5vmin;
+  padding-top: 2.5vmin;
 }
 
 .latest-slider {
@@ -76,12 +77,12 @@
     width: 10vmin;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 998px) {
   .latest-section {
     margin-top: 2.5vmin;
   }
   .latest-header {
-    margin-bottom: 2.5vmin;
+    margin-bottom: 1vmin;
   }
   .latest-header #latest-header-title {
     font-size: 4.5vmin;
@@ -95,7 +96,21 @@
     margin-top: 5vmin;
   }
   .latest-header {
-    margin-bottom: 2.5vmin;
+    margin-bottom: 0.5vmin;
+  }
+  .latest-header #latest-header-title {
+    font-size: 5vmin;
+  }
+  .latest-container {
+    gap: 1.5vmin;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .latest-section {
+    margin-top: 5vmin;
+  }
+  .latest-header {
+    margin-bottom: 0.5vmin;
   }
   .latest-header #latest-header-title {
     font-size: 5vmin;

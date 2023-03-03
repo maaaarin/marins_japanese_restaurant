@@ -73,3 +73,19 @@
         padding-left: 10% !important;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .d-xl{
+        display: flex !important;
+    }
+
+    .d-none-xl{
+        display: none !important;
+    }
+
+    .container{
+        padding-right: 12.5% !important;
+        padding-left: 12.5% !important;
+    }
+}
+

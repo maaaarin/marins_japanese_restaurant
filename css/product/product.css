@@ -3,13 +3,12 @@
   aspect-ratio: 1/2;
   flex: none;
   border-radius: 3.5vmin;
-  box-shadow: 3.5px 3.5px 10px -5px rgba(0, 0, 0, 0.48);
+  box-shadow: 7.5px 7.5px 15px -10px rgba(0, 0, 0, 0.3);
 }
 .product .product-container {
   width: 100%;
   height: 100%;
   border-radius: 3.5vmin;
-  overflow: hidden;
   position: relative;
 }
 .product .product-container .product-img {
@@ -19,6 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top-right-radius: 3.5vmin;
+  border-top-left-radius: 3.5vmin;
 }
 .product .product-container .product-img #sushi {
   width: 60%;
@@ -37,7 +38,7 @@
   background-color: #FD3F3F;
   border-radius: 150px;
   padding: 0.65vmin 5vmin;
-  top: 60%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -50,6 +51,8 @@
   justify-content: space-between;
   padding: 3vmin;
   padding-top: 5.5vmin;
+  border-bottom-left-radius: 3.5vmin;
+  border-bottom-right-radius: 3.5vmin;
 }
 .product .product-container .product-information #product-name {
   font-size: 4.5vmin;
@@ -65,6 +68,7 @@
   background-color: #000;
   border-radius: 150px;
   padding: 1.25vmin 4.1vmin;
+  white-space: nowrap;
 }
 .product .product-container .product-information .product-price .product-bag {
   cursor: pointer;
@@ -84,15 +88,21 @@
 
 @media screen and (min-width: 768px) {
   .product {
-    width: calc(33.3333333333% - 0.8333333333vmin);
+    width: calc(33.3333333333% - 1.6666666667vmin);
     aspect-ratio: 1/2;
     flex: none;
-    border-radius: 3.5vmin;
+    border-radius: 2vmin;
   }
   .product .product-container {
     width: 100%;
     height: 100%;
     border-radius: 1.5vmin;
+    border-top-right-radius: 2vmin;
+    border-top-left-radius: 2vmin;
+  }
+  .product .product-container .product-img {
+    border-top-right-radius: 2vmin;
+    border-top-left-radius: 2vmin;
   }
   .product .product-container .product-tag {
     font-size: 2.5vmin;
@@ -100,7 +110,8 @@
   }
   .product .product-container .product-information {
     padding: 1.5vmin;
-    padding-top: 3.5vmin;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
   }
   .product .product-container .product-information #product-name {
     font-size: 3.25vmin;
@@ -118,69 +129,122 @@
     height: 4.5vmin;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .product {
-    width: calc(20% - 1.2vmin);
+    width: calc(25% - 1.125vmin);
     aspect-ratio: 1/2;
-    border-radius: 2.5vmin;
+    flex: none;
+    border-radius: 3.5vmin;
   }
   .product .product-container {
+    width: 100%;
+    height: 100%;
     border-radius: 1.5vmin;
   }
+  .product .product-container .product-img {
+    border-top-right-radius: 1.5vmin;
+    border-top-left-radius: 1.5vmin;
+  }
   .product .product-container .product-tag {
-    font-size: 1.75vmin;
-    padding: 0.35vmin 2.5vmin;
+    font-size: 2.15vmin;
+    padding: 0.35vmin 3.5vmin;
   }
   .product .product-container .product-information {
-    padding: 1vmin;
-    padding-top: 2.5vmin;
+    padding: 1.5vmin;
+    border-bottom-left-radius: 1.5vmin;
+    border-bottom-right-radius: 1.5vmin;
   }
   .product .product-container .product-information #product-name {
-    font-size: 2.25vmin;
+    font-size: 2.52vmin;
   }
   .product .product-container .product-information .product-price span {
-    font-size: 2.15vmin;
-    padding: 0.8vmin 1.5vmin;
+    font-size: 2.35vmin;
+    padding: 1vmin 1.5vmin;
   }
   .product .product-container .product-information .product-price .product-bag {
-    padding: 0.8vmin;
+    padding: 1vmin;
     border-radius: 1vmin;
   }
   .product .product-container .product-information .product-price .product-bag #product-bag-icon {
-    width: 3vmin;
-    height: 3vmin;
+    width: 3.8vmin;
+    height: 3.8vmin;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
+  .product {
+    width: calc(25% - 1.125vmin);
+    aspect-ratio: 1/2;
+    flex: none;
+    border-radius: 3.5vmin;
+  }
+  .product .product-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vmin;
+  }
+  .product .product-container .product-img {
+    border-top-right-radius: 1.5vmin;
+    border-top-left-radius: 1.5vmin;
+  }
+  .product .product-container .product-tag {
+    font-size: 2.15vmin;
+    padding: 0.35vmin 3.5vmin;
+  }
+  .product .product-container .product-information {
+    padding: 1.5vmin;
+  }
+  .product .product-container .product-information #product-name {
+    font-size: 2.7vmin;
+  }
+  .product .product-container .product-information .product-price span {
+    font-size: 2.5vmin;
+    padding: 1vmin 1.5vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag {
+    padding: 1vmin;
+    border-radius: 1vmin;
+  }
+  .product .product-container .product-information .product-price .product-bag #product-bag-icon {
+    width: 4.25vmin;
+    height: 4.25vmin;
+  }
+}
+@media screen and (min-width: 1440px) {
   .product {
     width: calc(16.6666666667% - 1.25vmin);
     aspect-ratio: 1/2;
-    border-radius: 2.5vmin;
+    flex: none;
+    border-radius: 3.5vmin;
   }
   .product .product-container {
+    width: 100%;
+    height: 100%;
     border-radius: 1.5vmin;
   }
+  .product .product-container .product-img {
+    border-top-right-radius: 1.5vmin;
+    border-top-left-radius: 1.5vmin;
+  }
   .product .product-container .product-tag {
-    font-size: 2.5vmin;
-    padding: 0.35vmin 2.5vmin;
+    font-size: 1.15vmax;
+    padding: 0.35vmin 3.5vmin;
   }
   .product .product-container .product-information {
-    padding: 1.65vmin;
-    padding-top: 3vmin;
+    padding: 1vmin;
   }
   .product .product-container .product-information #product-name {
-    font-size: 2.65vmin;
+    font-size: 1.45vmax;
   }
   .product .product-container .product-information .product-price span {
-    font-size: 2.65vmin;
-    padding: 0.8vmin 1.65vmin;
+    font-size: 1.15vmax;
+    padding: 0.85vmin 1.5vmin;
   }
   .product .product-container .product-information .product-price .product-bag {
-    padding: 0.8vmin;
-    border-radius: 0.8vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
   }
   .product .product-container .product-information .product-price .product-bag #product-bag-icon {
-    width: 4.15vmin;
-    height: 4.15vmin;
+    width: 1.85vmax;
+    height: 1.85vmax;
   }
 }/*# sourceMappingURL=product.css.map */

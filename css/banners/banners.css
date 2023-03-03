@@ -12,9 +12,9 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    gap: 50px;
+    gap: 10px;
     border-radius: 20px;
-    margin-top: 20vmin;
+    margin-top: 15vmin;
 }
 .azul{
     background-color: #C4E3FF;
@@ -23,19 +23,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C4E3FF;
     width: 50%;  
-    border-radius: 20px;  
+    border-radius: 0 0 20px 20px;  
     height: 60vmin;
+    overflow: hidden;
 }
 .sushi{
     display: flex;
     flex-direction: column-reverse;
-
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px; 
 }
 
 .parrafo{
@@ -47,7 +45,7 @@
     color: white;
     text-align: center;
     font-size: 5.5vmin;
-    padding: 15px;
+    padding: 40px;
 }
 
 .parrafo h2 {
@@ -67,53 +65,106 @@
     .imagen{
         display: flex;
         flex-direction: column-reverse;
+        border-radius:20px 20px  0 0 ; 
     }
     .parrafo{
         display: flex;
         flex-direction: column;
         margin: 80px;
         font-size: 35px;
+        padding: 20px;
     }
 }
-@media only screen and(min-width:992px) {
-    .contenedor{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .sushi{
-        width: 80%;
-    }
-    .parrafo{
-        display: flex;
-        flex-direction: column;
-        margin: 80px;
-        font-size: 35px;
-    }
-    
-}
-@media only screen and (min-width:1200px){
 
+@media only screen and (min-width: 992px) {  
     .contenedor{
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 5vmin;
-        padding: 45px 0;
-        gap: 80px;
-        border-radius: 50px;
+        margin-top: 10vmin;
     }
     .imagen{
         display: flex;
-        justify-content: flex-end;
-        height: 60vmin;
+        flex-direction: column-reverse;
+        border-radius:20px 20px  0 0 ; 
     }
-    .parrafo {
-        margin-right: 250px;
+
+    .sushi{
+        height: 80%;
+        border-radius: 20px;
+    }
+
+    .parrafo{
+        width: 60%;
         display: flex;
         align-items: flex-start;
-        text-align: start;
+        flex-direction: column;
+        margin: 0;
+        font-size: 35px;
+        padding-left: 15px;
+        text-align: left;
     }
+
+
+}
+
+@media only screen and (min-width: 1200px) {  
+    .contenedor{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10vmin;
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 70vmin;
+    }
+
+    .sushi{
+        height: 80%;
+        border-radius: 20px;
+    }
+
+    .parrafo{
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+        font-size: 35px;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px) {  
+    .contenedor{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10vmin;
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vmin;
+    }
+
+    .sushi{
+        height: 80%;
+        border-radius: 20px;
+    }
+
+    .parrafo{
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+        font-size: 35px;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+
 }
