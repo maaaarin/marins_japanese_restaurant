@@ -1,397 +1,315 @@
-.newsletter{
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+.newsletter {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .all {
-  width: 100%;
-  overflow: hidden;
-  height: min-content;
-  margin-top: 40px;
-  background-color: #C4E3FF;
-  border-radius: 20px;
-  align-items: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  gap: 15px;
+	width: 100%;
+	overflow: hidden;
+	height: min-content;
+	margin-top: 40px;
+	background-color: #c4e3ff;
+	border-radius: 20px;
+	align-items: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	gap: 15px;
 }
 
 .suscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-self: flex-end;
-  text-align: center;
-  font-size: 22.5px;
-  position: relative;
-  z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-self: flex-end;
+	text-align: center;
+	font-size: 22.5px;
+	position: relative;
+	z-index: 5;
 }
 
-.yourjoin{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  position: relative;
-  z-index: 5;
+.suscribe-texto {
+	font-size: 25px;
+}
+
+.yourjoin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 15px;
+	position: relative;
+	z-index: 5;
 }
 
 .Youremail {
-  display: flex;
-  flex-direction: column;
-  border-radius: 100px;
-  border: 1px solid #ffff;
-  width: 100%;
-  padding: 15px 20px;;
-  font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 100px;
+	border: 1px solid #ffff;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 25px;
+}
+
+.Youremail::placeholder {
+	text-align: center;
+	font-size: 25px;
 }
 
 .JoinToday {
-  padding: 15px 20px;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 100px;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 100px;
+	cursor: pointer;
+	font-size: 25px;
 }
 
-.letras{
-  font-size: 20px;
+.letras {
+	font-size: 25px;
 }
 
 .boton {
-  text-align: center;
+	text-align: center;
 }
 
 .email {
-text-align: center;
+	text-align: center;
 }
 
-.imagennewsletter-2{
-  height: 70%;
-  object-fit: contain;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-@media only screen and (min-width: 600px) {
-      
-  .newsletter{
-      width: 100%;
-      position: relative;
-  }
-
-  .all {
-      width: 100%;
-      height: min-content;
-      margin-top: 40px;
-      background-color: #C4E3FF;
-      border-radius: 20px;
-      align-items: center;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      gap: 15px;
-  }
-
-  .suscribe {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-self: flex-end;
-      text-align: center;
-      font-size: 22.5px;
-      position: relative;
-      z-index: 5;
-  }
-
-  .yourjoin{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 15px;
-      position: relative;
-      z-index: 5;
-  }
-
-  .Youremail {
-      display: flex;
-      flex-direction: column;
-      border: 30%;
-      border-radius: 100px;
-      border: 1px solid #ffff;
-      width: 100%;
-      padding: 15px 20px;;
-      font-size: 20px;
-  }
-
-  .JoinToday {
-      display: flex;
-      align-items: center;
-      justify-self: center;
-      padding: 15px 20px;
-      box-sizing: border-box;
-      background-color: black;
-      color: white;
-      border-radius: 100px;
-      
-  }
-
-  .letras{
-      font-size: 20px;
-  }
-
-  .boton {
-      text-align: center;
-  }
-
-  .email {
-  text-align: center;
-  }
-
-  .imagennewsletter-2{
-      height: 60%;
-      object-fit: contain;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-  }
+.imagennewsletter-2 {
+	height: 60%;
+	object-fit: contain;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
-      
-  .newsletter{
-      width: 100%;
-      position: relative;
-      margin-top: 5vmin;
-  }
+	.newsletter {
+		width: 100%;
+		position: relative;
+		margin-top: 5vmin;
+	}
 
-  .all {
-      width: 100%;
-      margin-top: 10px;
-      background-color: #C4E3FF;
-      border-radius: 20px;
-      align-items: center;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 30px;
-      gap: 25px;
-  }
+	.all {
+		width: 100%;
+		margin-top: 10px;
+		background-color: #c4e3ff;
+		border-radius: 20px;
+		align-items: center;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 30px;
+		gap: 25px;
+	}
 
-  .suscribe {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-self: flex-start;
-      text-align: center;
-      font-size: 25px;
-      width: 60%;
-      position: relative;
-      z-index: 5;
-      text-align: left;
-  }
+	.suscribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-self: flex-start;
+		text-align: center;
+		font-size: 25px;
+		width: 60%;
+		position: relative;
+		z-index: 5;
+		text-align: left;
+	}
 
-  .yourjoin{
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: row;
-      gap: 0;
-      position: relative;
-      z-index: 5;
-  }
+	.yourjoin {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: row;
+		gap: 0;
+		position: relative;
+		z-index: 5;
+	}
 
-  .Youremail {
-      display: flex;
-      flex-direction: column;
-      border: 30%;
-      border-radius: 100px;
-      border: 1px solid #ffff;
-      width: 325px;
+	.Youremail {
+		display: flex;
+		flex-direction: column;
+		border: 30%;
+		border-radius: 100px;
+		border: 1px solid #ffff;
+		width: 325px;
+		font-size: 20px;
+	}
 
-      font-size: 20px;
-  }
+	.Youremail::placeholder {
+		text-align: left;
+	}
 
-  .JoinToday {
-      display: flex;
-      align-items: center;
-      justify-self: center;
-      padding: 15px 20px;
-      box-sizing: border-box;
-      background-color: black;
-      color: white;
-      border-radius: 100px;
-      margin-left: -100%;
-  }
+	.JoinToday {
+		display: flex;
+		align-items: center;
+		justify-self: center;
+		padding: 15px 20px;
+		box-sizing: border-box;
+		background-color: black;
+		color: white;
+		border-radius: 100px;
+		margin-left: -100%;
+	}
 
-  .letras{
-      font-size: 20px;
-      white-space: nowrap;
-  }
+	.letras {
+		font-size: 20px;
+		white-space: nowrap;
+	}
 
-  .boton {
-      text-align: center;
-  }
+	.boton {
+		text-align: center;
+	}
 
-  .email {
-  text-align: center;
-  }
+	.email {
+		text-align: center;
+	}
 
-  .imagennewsletter{
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      bottom: 0;
-      right: -20%;
-      z-index: 1;
-  }
+	.imagennewsletter {
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		bottom: 0;
+		right: -20%;
+		z-index: 1;
+	}
 }
 
 @media only screen and (min-width: 998px) {
+	.newsletter {
+		margin-top: 0.5vmin;
+	}
 
-  .newsletter{
-    margin-top: .5vmin;
-  }
+	.all {
+		background-color: #c4e3ff;
+		align-items: flex-start;
+		margin-right: 20px;
+		border-radius: 20px;
+		display: flex;
+		position: relative;
+	}
 
+	.suscribe {
+		display: flex;
+		flex-direction: row;
+	}
 
-  .all {
-      background-color: #C4E3FF;
-      align-items: flex-start;
-      margin-right: 20px;
-      border-radius: 20px;
-      display: flex;
-      position: relative;
-  }
+	.yourjoin {
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+	}
 
-  .suscribe {
-      display: flex;
-      flex-direction: row;
+	.JoinToday {
+		display: flex;
+		flex-direction: column-reverse;
+		box-sizing: border-box;
+		background-color: black;
+		color: white;
+		margin-left: -25%;
+		border-radius: 100px;
+		z-index: 5;
+		position: relative;
+	}
 
-  }
+	.Youremail {
+		border-radius: 100px;
+		border: 1px solid #ffff;
+		height: 50px;
+		width: 250px;
+		z-index: 5;
+		position: relative;
+	}
 
-  .yourjoin {
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-
-  }
-
-
-  .JoinToday {
-      display: flex;
-      flex-direction: column-reverse;
-      box-sizing: border-box;
-      background-color: black;
-      color: white;
-      margin-left: -25%;
-      border-radius: 100px;
-      z-index: 5;
-      position: relative;
-  }
-
-  .Youremail {
-      border-radius: 100px;
-      border: 1px solid #ffff;
-      height: 50px;
-      width: 250px;
-      z-index: 5;
-      position: relative;
-  }
-
-  .imagennewsletter {
-      position: absolute;
-      width: 40%;
-      height: 100%;
-      object-fit: cover;
-      right: 0;
-  }
+	.imagennewsletter {
+		position: absolute;
+		width: 40%;
+		height: 100%;
+		object-fit: cover;
+		right: 0;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
-  .newsletter{
-    margin-top: 2vmin;
-  }
+	.newsletter {
+		margin-top: 1vmin;
+	}
 
-  .all {
-      background-color: #C4E3FF;
+	.all {
+		background-color: #c4e3ff;
 
-      border-radius: 20px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-top: 10px;
-      height: 250px;
-  }
+		border-radius: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin-top: 10px;
+		height: 250px;
+	}
 
-  .suscribe {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+	.suscribe {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-  .suscribe-texto{
-      font-size: 30px;
-      padding: 35px;
-  }
+	.suscribe-texto {
+		font-size: 30px;
+		padding: 35px 15px;
+	}
 
-  .yourjoin {
-      display: flex;
-      flex-direction: row;
-  }
+	.yourjoin {
+		display: flex;
+		flex-direction: row;
+	}
 
-  .JoinToday {
-      display: flex;
-      padding: 15px 20px;
-      background-color: black;
-      color: white;
-      margin-left: -35%;
-      height: 100%;
-      border-radius: 100px;
-      z-index: 5;
-      position: relative;
-  }
+	.JoinToday {
+		display: flex;
+		padding: 15px 20px;
+		background-color: black;
+		color: white;
+		margin-left: -35%;
+		height: 100%;
+		border-radius: 100px;
+		z-index: 5;
+		position: relative;
+	}
 
-  .letras{
-      font-size: 30px;
-  }
+	.letras {
+		font-size: 25px;
+	}
 
-  .Youremail {
-      border-radius: 100px;
-      border: none;
-      height: 100%;
-      padding: 15px 20px;
-      font-size: 30px;
-      width: 100%;
-      z-index: 5;
-      position: relative;
-  }
+	.Youremail {
+		border-radius: 100px;
+		border: none;
+		height: 100%;
+		padding: 15px 20px;
+		font-size: 25px;
+		width: 100%;
+		z-index: 5;
+		position: relative;
+	}
 
-  .imagennewsletter {
-      position: absolute;
-      width: 40%;
-      height: 100%;
-      object-fit: cover;
-      right: 0;
-  }
-
+	.imagennewsletter {
+		position: absolute;
+		width: 40%;
+		height: 100%;
+		object-fit: cover;
+		right: 0;
+	}
 }

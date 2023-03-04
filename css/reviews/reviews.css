@@ -93,14 +93,14 @@
 
 @media screen and (min-width: 768px) {
   .reviews-section {
-    margin-top: 12.5vmin;
+    margin-top: 5vmin;
   }
   .reviews-header {
     gap: 1.5vmin;
     margin-bottom: 5vmin;
   }
   .reviews-header #reviews-header-title {
-    font-size: 7.5vmin;
+    font-size: 6.5vmin;
   }
   .reviews-container {
     width: 100%;

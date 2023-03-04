@@ -1,24 +1,48 @@
-
-.recommendations-section{
+.recommendations-section {
     width: 100%;
     margin-top: 10vmin;
 }
 
-.recommendations-header{
+.recommendations-header {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 1.5vmin;
     margin-bottom: 5vmin;
 
-    #recommendations-header-title{
+    #recommendations-header-title {
         font-size: 9vmin;
         font-weight: 500;
         white-space: nowrap;
     }
+
+    .recommendations-slider-controls {
+        width: max-content;
+        display: flex;
+        gap: 1vmin;
+
+        .recommendation-next,
+        .recommendation-prev {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5vmax;
+            height: 5vmax;
+            background-color: #000;
+            border-radius: 50%;
+            cursor: pointer;
+
+            svg {
+                width: 70%;
+                height: 70%;
+                color: #fff;
+            }
+        }
+    }
 }
 
-.recommendations-container{
+.recommendations-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -29,7 +53,7 @@
     padding-top: 4.5vmin;
 }
 
-.recommendations-slider{
+.recommendations-slider {
     width: 100%;
     height: auto;
     display: flex;
@@ -38,15 +62,15 @@
     gap: 2.5vmin;
     margin-top: 6.5vmin;
 
-    .slider{
+    .slider {
         width: 6vmin;
         height: 6vmin;
         border-radius: 50%;
-        background-color: rgba(0,0,0,0.48);
+        background-color: rgba(0, 0, 0, 0.48);
         transition-duration: .6s;
     }
 
-    .active{
+    .active {
         width: 15vmin;
         border-radius: 150px;
         background-color: #000;
@@ -54,92 +78,106 @@
     }
 }
 
+
+
 // Queries
 
 @media only screen and (min-width: 768px) {
-    .recommendations-section{
+    .recommendations-section {
         margin-top: 5vmin;
     }
-    
-    .recommendations-header{
+
+    .recommendations-header {
         gap: 1.5vmin;
         margin-bottom: 2.5vmin;
-    
-        #recommendations-header-title{
+
+        #recommendations-header-title {
             font-size: 6.5vmin;
         }
     }
-    
-    .recommendations-container{
+
+    .recommendations-container {
         gap: 2.5vmin;
     }
-    
-    .recommendations-slider{
+
+    .recommendations-slider {
         width: 100%;
         gap: 1.5vmin;
         margin-top: 1.5vmin;
-    
-        .slider{
+
+        .slider {
             width: 3.5vmin;
             height: 3.5vmin;
         }
-    
-        .active{
+
+        .active {
             width: 10vmin;
         }
     }
 }
 
-@media only screen and (min-width: 998px){
-    .recommendations-section{
+@media only screen and (min-width: 998px) {
+    .recommendations-section {
         margin-top: 2.5vmin;
     }
-    
-    .recommendations-header{
-        margin-bottom: 1vmin;
-    
-        #recommendations-header-title{
+
+    .recommendations-header {
+        margin-bottom: 1.5vmin;
+
+        #recommendations-header-title {
             font-size: 4.5vmin;
         }
     }
-    
-    .recommendations-container{
+
+    .recommendations-container {
+        gap: 1.5vmin;
+        padding-bottom: 2.5vmin;
+        padding-top: 2.5vmin;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .recommendations-section {
+        margin-top: 5vmin;
+    }
+
+    .recommendations-header {
+        margin-bottom: 2.5;
+
+        #recommendations-header-title {
+            font-size: 4.5vmin;
+        }
+
+        .recommendations-slider-controls {
+            gap: 1vmin;
+
+            .recommendation-next,
+            .recommendation-prev {
+                width: 4.5vmax;
+                height: 4.5vmax;
+            }
+        }
+    }
+
+    .recommendations-container {
         gap: 1.5vmin;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    .recommendations-section{
+@media only screen and (min-width: 1440px) {
+    .recommendations-section {
         margin-top: 5vmin;
     }
-    
-    .recommendations-header{
-        margin-bottom: .5vmin;
-    
-        #recommendations-header-title{
-            font-size: 5vmin;
-        }
-    }
-    
-    .recommendations-container{
-        gap: 1.5vmin;
-    }
-}
 
-@media only screen and (min-width: 1440px){
-    .recommendations-section{
-        margin-top: 5vmin;
-    }
-    
-    .recommendations-header{
-        margin-bottom: .5vmin;
-    
-        #recommendations-header-title{
+    .recommendations-header {
+        margin-bottom: 2.5vmin;
+
+        #recommendations-header-title {
             font-size: 5vmin;
         }
     }
-    
-    .recommendations-container{
+
+    .recommendations-container {
         gap: 1.5vmin;
     }
 }

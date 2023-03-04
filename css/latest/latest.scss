@@ -1,24 +1,48 @@
-
-.latest-section{
+.latest-section {
     width: 100%;
     margin-top: 10vmin;
 }
 
-.latest-header{
+.latest-header {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 1.5vmin;
     margin-bottom: 2.5vmin;
 
-    #latest-header-title{
+    #latest-header-title {
         font-size: 9vmin;
         font-weight: 500;
         white-space: nowrap;
     }
+
+    .latest-slider-controls {
+        width: max-content;
+        display: flex;
+        gap: 1vmin;
+
+        .latest-next,
+        .latest-prev {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5vmax;
+            height: 5vmax;
+            background-color: #000;
+            border-radius: 50%;
+            cursor: pointer;
+
+            svg {
+                width: 70%;
+                height: 70%;
+                color: #fff;
+            }
+        }
+    }
 }
 
-.latest-container{
+.latest-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -26,10 +50,10 @@
     gap: 3.5vmin;
     overflow: hidden;
     padding-bottom: 2.5vmin;
-    padding-top: 2.5vmin;
+    padding-top: 5vmin;
 }
 
-.latest-slider{
+.latest-slider {
     width: 100%;
     height: auto;
     display: flex;
@@ -38,15 +62,15 @@
     gap: 2.5vmin;
     margin-top: 6.5vmin;
 
-    .slider{
+    .slider {
         width: 6vmin;
         height: 6vmin;
         border-radius: 50%;
-        background-color: rgba(0,0,0,0.48);
+        background-color: rgba(0, 0, 0, 0.48);
         transition-duration: .6s;
     }
 
-    .active{
+    .active {
         width: 15vmin;
         border-radius: 150px;
         background-color: #000;
@@ -57,89 +81,100 @@
 // Queries
 
 @media only screen and (min-width: 768px) {
-    .latest-section{
+    .latest-section {
         margin-top: 5vmin;
     }
-    
-    .latest-header{
+
+    .latest-header {
         gap: 1.5vmin;
         margin-bottom: 2.5vmin;
-    
-        #latest-header-title{
+
+        #latest-header-title {
             font-size: 6.5vmin;
         }
     }
-    
-    .latest-container{
+
+    .latest-container {
         gap: 2.5vmin;
+        padding-top: 2.5vmin;
     }
-    
-    .latest-slider{
+
+    .latest-slider {
         width: 100%;
         gap: 1.5vmin;
         margin-top: 1.5vmin;
-    
-        .slider{
+
+        .slider {
             width: 3.5vmin;
             height: 3.5vmin;
         }
-    
-        .active{
+
+        .active {
             width: 10vmin;
         }
     }
 }
 
-@media only screen and (min-width: 998px){
-    .latest-section{
+@media only screen and (min-width: 998px) {
+    .latest-section {
         margin-top: 2.5vmin;
     }
-    
-    .latest-header{
-        margin-bottom: 1vmin;
-    
-        #latest-header-title{
+
+    .latest-header {
+        margin-bottom: 1.5vmin;
+
+        #latest-header-title {
             font-size: 4.5vmin;
         }
     }
-    
-    .latest-container{
+
+    .latest-container {
         gap: 1.5vmin;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    .latest-section{
+@media only screen and (min-width: 1200px) {
+    .latest-section {
         margin-top: 5vmin;
     }
-    
-    .latest-header{
-        margin-bottom: .5vmin;
-    
-        #latest-header-title{
+
+    .latest-header {
+        margin-bottom: 2.5vmin;
+
+        #latest-header-title {
             font-size: 5vmin;
         }
+
+        .latest-slider-controls {
+            gap: 1vmin;
+
+            .latest-next,
+            .latest-prev {
+                width: 4.5vmax;
+                height: 4.5vmax;
+            }
+        }
     }
-    
-    .latest-container{
+
+    .latest-container {
         gap: 1.5vmin;
     }
 }
 
-@media only screen and (min-width: 1440px){
-    .latest-section{
+@media only screen and (min-width: 1440px) {
+    .latest-section {
         margin-top: 5vmin;
     }
-    
-    .latest-header{
-        margin-bottom: .5vmin;
-    
-        #latest-header-title{
+
+    .latest-header {
+        margin-bottom: 1.5vmin;
+
+        #latest-header-title {
             font-size: 5vmin;
         }
     }
-    
-    .latest-container{
+
+    .latest-container {
         gap: 1.5vmin;
     }
 }

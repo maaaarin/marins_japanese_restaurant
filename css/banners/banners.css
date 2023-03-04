@@ -8,7 +8,7 @@
 .contenedor{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     background-color: black;
@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;  
-    border-radius: 0 0 20px 20px;  
+    border-radius:20px 20px 0 0;  
     height: 60vmin;
     overflow: hidden;
 }
@@ -56,16 +56,38 @@
     color: black;
 }
 
+
 @media only screen and (min-width:768px) {  
     .contenedor{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 10vmin;
     }
     .imagen{
         display: flex;
         flex-direction: column-reverse;
-        border-radius:20px 20px  0 0 ; 
+        border-radius: 0 0  20px 20px ; 
+    }
+    .parrafo{
+        display: flex;
+        flex-direction: column;
+        margin: 80px;
+        font-size: 35px;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (min-width:768px) {  
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vmin;
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0 0  20px 20px ; 
     }
     .parrafo{
         display: flex;

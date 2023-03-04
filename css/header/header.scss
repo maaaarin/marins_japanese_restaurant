@@ -70,40 +70,6 @@ nav{
         margin-left: 1.5vmin;
     }
 
-    .nav-searchbar{
-        width: 100%;
-        height: 75%;
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        #nav-search-input{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.15);
-            border-radius: 150px;
-            outline: none;
-            border: none;
-            text-indent: 2vmin;
-            font-size: 2.5vmin;
-            font-weight: 100;
-        }
-
-        #nav-search-input::placeholder{
-            text-indent: 2vmin;
-            font-size: 2.15vmin;
-            font-weight: 100;
-        }
-
-        #nav-search-icon{
-            width: 3vmin;
-            height: 3vmin;
-            position: absolute;
-            right: 2.5vmin;
-            cursor: pointer;
-        }
-    }
-
     #nav-log-in{
         width: 12.5vmin;
         height: 65%;
@@ -206,36 +172,14 @@ nav{
             color: #fff;
             transition: .6s;
         }
+            
+        #nav-search-icon{
+            color: #fff;
+            transition: .6s;
+        }
 
         .nav-categories{
             gap: 3.5vmin;
-        }
-
-        .nav-searchbar{
-
-            #nav-search-input{
-                background-color: rgba(0,0,0,0.45);
-                text-indent: 3vmin;
-                transition: .6s;
-                font-size: 2.5vmin;
-                color: #fff;
-            }
-
-            #nav-search-input::placeholder{
-                text-indent: 3vmin;
-                font-size: 2.15vmin;
-                color: rgba(255,255,255,0.75);
-                transition: .6s;
-            }
-
-            #nav-search-icon{
-                width: 3.5vmin;
-                height: 3.5vmin;
-
-                right: 3.15vmin;
-                color: #fff;
-                transition: .6s;
-            }
         }
 
         #nav-access{
@@ -266,25 +210,12 @@ nav{
                 color: #000;
                 transition: .6s;
             }
-    
-            .nav-searchbar{
 
-                #nav-search-input{
-                    background-color: rgba(0,0,0,0.15);
-                    transition: .6s;
-                    color: #000;
-                }
-    
-                #nav-search-input::placeholder{
-                    color: rgba(0,0,0,0.75);
-                    transition: .6s;
-                }
-    
-                #nav-search-icon{
-                    color: #000;
-                    transition: .6s;
-                }
+            #nav-search-icon{
+                color: #000;
+                transition: .6s;
             }
+
         }
     }
 
@@ -312,23 +243,9 @@ nav{
                 transition: .6s;
             }
     
-            .nav-searchbar{
-
-                #nav-search-input{
-                    background-color: rgba(0,0,0,0.15);
-                    transition: .6s;
-                    color: #000;
-                }
-    
-                #nav-search-input::placeholder{
-                    color: rgba(0,0,0,0.75);
-                    transition: .6s;
-                }
-    
-                #nav-search-icon{
-                    color: #000;
-                    transition: .6s;
-                }
+            #nav-search-icon{
+                color: #000;
+                transition: .6s;
             }
         }
     }

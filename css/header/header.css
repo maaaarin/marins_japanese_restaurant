@@ -62,41 +62,6 @@ nav {
   gap: 2.25vmin;
   margin-left: 1.5vmin;
 }
-.nav-list .nav-searchbar {
-  width: 100%;
-  height: 75%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.nav-list .nav-searchbar #nav-search-input {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 150px;
-  outline: none;
-  border: none;
-  text-indent: 2vmin;
-  font-size: 2.5vmin;
-  font-weight: 100;
-}
-.nav-list .nav-searchbar #nav-search-input::-moz-placeholder {
-  text-indent: 2vmin;
-  font-size: 2.15vmin;
-  font-weight: 100;
-}
-.nav-list .nav-searchbar #nav-search-input::placeholder {
-  text-indent: 2vmin;
-  font-size: 2.15vmin;
-  font-weight: 100;
-}
-.nav-list .nav-searchbar #nav-search-icon {
-  width: 3vmin;
-  height: 3vmin;
-  position: absolute;
-  right: 2.5vmin;
-  cursor: pointer;
-}
 .nav-list #nav-log-in {
   width: 12.5vmin;
   height: 65%;
@@ -174,35 +139,12 @@ nav {
     color: #fff;
     transition: 0.6s;
   }
+  .nav-list #nav-search-icon {
+    color: #fff;
+    transition: 0.6s;
+  }
   .nav-list .nav-categories {
     gap: 3.5vmin;
-  }
-  .nav-list .nav-searchbar #nav-search-input {
-    background-color: rgba(0, 0, 0, 0.45);
-    text-indent: 3vmin;
-    transition: 0.6s;
-    font-size: 2.5vmin;
-    color: #fff;
-  }
-  .nav-list .nav-searchbar #nav-search-input::-moz-placeholder {
-    text-indent: 3vmin;
-    font-size: 2.15vmin;
-    color: rgba(255, 255, 255, 0.75);
-    -moz-transition: 0.6s;
-    transition: 0.6s;
-  }
-  .nav-list .nav-searchbar #nav-search-input::placeholder {
-    text-indent: 3vmin;
-    font-size: 2.15vmin;
-    color: rgba(255, 255, 255, 0.75);
-    transition: 0.6s;
-  }
-  .nav-list .nav-searchbar #nav-search-icon {
-    width: 3.5vmin;
-    height: 3.5vmin;
-    right: 3.15vmin;
-    color: #fff;
-    transition: 0.6s;
   }
   .nav-list #nav-access {
     font-size: 2.75vmin;
@@ -224,21 +166,7 @@ nav {
     color: #000;
     transition: 0.6s;
   }
-  header:hover .nav-list .nav-searchbar #nav-search-input {
-    background-color: rgba(0, 0, 0, 0.15);
-    transition: 0.6s;
-    color: #000;
-  }
-  header:hover .nav-list .nav-searchbar #nav-search-input::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.75);
-    -moz-transition: 0.6s;
-    transition: 0.6s;
-  }
-  header:hover .nav-list .nav-searchbar #nav-search-input::placeholder {
-    color: rgba(0, 0, 0, 0.75);
-    transition: 0.6s;
-  }
-  header:hover .nav-list .nav-searchbar #nav-search-icon {
+  header:hover .nav-list #nav-search-icon {
     color: #000;
     transition: 0.6s;
   }
@@ -259,21 +187,7 @@ nav {
     color: #000;
     transition: 0.6s;
   }
-  .header-scroll .nav-list .nav-searchbar #nav-search-input {
-    background-color: rgba(0, 0, 0, 0.15);
-    transition: 0.6s;
-    color: #000;
-  }
-  .header-scroll .nav-list .nav-searchbar #nav-search-input::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.75);
-    -moz-transition: 0.6s;
-    transition: 0.6s;
-  }
-  .header-scroll .nav-list .nav-searchbar #nav-search-input::placeholder {
-    color: rgba(0, 0, 0, 0.75);
-    transition: 0.6s;
-  }
-  .header-scroll .nav-list .nav-searchbar #nav-search-icon {
+  .header-scroll .nav-list #nav-search-icon {
     color: #000;
     transition: 0.6s;
   }
