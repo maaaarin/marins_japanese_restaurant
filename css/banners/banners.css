@@ -1,192 +1,241 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu", sans-serif;
 }
-.contenedor{
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    gap: 10px;
-    border-radius: 20px;
-    margin-top: 15vmin;
-}
-.azul{
-    background-color: #C4E3FF;
-}
-.imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;  
-    border-radius:20px 20px 0 0;  
-    height: 60vmin;
-    overflow: hidden;
-}
-.sushi{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.contenedor {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	gap: 10px;
+	border-radius: 20px;
+	margin-top: 15vmin;
 }
 
-.parrafo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: white;
-    text-align: center;
-    font-size: 5.5vmin;
-    padding: 40px;
+.primer-banner {
+	flex-direction: column;
+}
+
+.primer-banner .imagen {
+	border-radius: 0 0 20px 20px;
+}
+
+.segundo-banner {
+	background-color: #c4e3ff;
+	flex-direction: column-reverse;
+}
+
+.segundo-banner .imagen {
+	border-radius: 20px 20px 0 0;
+}
+
+.imagen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 60vmin;
+	overflow: hidden;
+}
+.sushi {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.parrafo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	color: white;
+	text-align: center;
+	font-size: 5.5vmin;
+	padding: 40px;
 }
 
 .parrafo h2 {
-    font-weight: bold;
+	font-weight: bold;
 }
 
-.negro{
-    color: black;
+.negro {
+	color: black;
 }
 
+@media only screen and (min-width: 768px) {
+	.contenedor {
+		display: flex;
+		margin-top: 10vmin;
+	}
 
-@media only screen and (min-width:768px) {  
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10vmin;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-        border-radius: 0 0  20px 20px ; 
-    }
-    .parrafo{
-        display: flex;
-        flex-direction: column;
-        margin: 80px;
-        font-size: 35px;
-        padding: 20px;
-    }
+	.primer-banner {
+		flex-direction: column;
+	}
+
+	.primer-banner .imagen {
+		border-radius: 0 0 20px 20px;
+	}
+
+	.segundo-banner {
+		background-color: #c4e3ff;
+		flex-direction: column-reverse;
+	}
+
+	.segundo-banner .imagen {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.imagen {
+		display: flex;
+		flex-direction: column-reverse;
+		border-radius: 0 0 20px 20px;
+	}
+	.parrafo {
+		display: flex;
+		flex-direction: column;
+		margin: 80px;
+		font-size: 35px;
+		padding: 20px;
+	}
 }
 
+@media only screen and (min-width: 992px) {
+	.contenedor {
+		display: flex;
+		margin-top: 10vmin;
+	}
+	.imagen {
+		display: flex;
+		flex-direction: column-reverse;
+		border-radius: 20px 20px 0 0;
+	}
 
-@media only screen and (min-width:768px) {  
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10vmin;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-        border-radius: 0 0  20px 20px ; 
-    }
-    .parrafo{
-        display: flex;
-        flex-direction: column;
-        margin: 80px;
-        font-size: 35px;
-        padding: 20px;
-    }
+	.primer-banner {
+		flex-direction: row-reverse;
+	}
+
+	.primer-banner .imagen {
+		border-radius: 0 0 20px 20px;
+	}
+
+	.segundo-banner {
+		background-color: #c4e3ff;
+		flex-direction: row;
+	}
+
+	.segundo-banner .imagen {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.sushi {
+		height: 80%;
+		border-radius: 20px;
+	}
+
+	.parrafo {
+		width: 60%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		margin: 25px;
+		font-size: 35px;
+		padding: 25px;
+		text-align: left;
+	}
 }
 
-@media only screen and (min-width: 992px) {  
-    .contenedor{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 10vmin;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-        border-radius:20px 20px  0 0 ; 
-    }
+@media only screen and (min-width: 1200px) {
+	.contenedor {
+		display: flex;
+		margin-top: 10vmin;
+	}
+	.imagen {
+		display: flex;
+		flex-direction: column-reverse;
+		height: 70vmin;
+	}
 
-    .sushi{
-        height: 80%;
-        border-radius: 20px;
-    }
+	.primer-banner {
+		flex-direction: row-reverse;
+	}
 
-    .parrafo{
-        width: 60%;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0;
-        font-size: 35px;
-        padding-left: 15px;
-        text-align: left;
-    }
+	.primer-banner .imagen {
+		border-radius: 0 0 20px 20px;
+	}
 
+	.segundo-banner {
+		background-color: #c4e3ff;
+		flex-direction: row;
+	}
 
+	.segundo-banner .imagen {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.sushi {
+		height: 80%;
+		border-radius: 20px;
+	}
+
+	.parrafo {
+		width: 60%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		margin: 0;
+		font-size: 35px;
+		padding: 35px;
+		text-align: left;
+	}
 }
 
-@media only screen and (min-width: 1200px) {  
-    .contenedor{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 10vmin;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 70vmin;
-    }
+@media only screen and (min-width: 1440px) {
+	.contenedor {
+		display: flex;
+		flex-direction: row-reverse;
+		margin-top: 10vmin;
+	}
+	.imagen {
+		display: flex;
+		flex-direction: column-reverse;
+		height: 80vmin;
+	}
 
-    .sushi{
-        height: 80%;
-        border-radius: 20px;
-    }
+	.primer-banner {
+		flex-direction: row-reverse;
+	}
 
-    .parrafo{
-        width: 60%;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0;
-        font-size: 35px;
-        padding-left: 15px;
-        text-align: left;
-    }
+	.primer-banner .imagen {
+		border-radius: 0 0 20px 20px;
+	}
 
+	.segundo-banner {
+		background-color: #c4e3ff;
+		flex-direction: row;
+	}
 
-}
+	.segundo-banner .imagen {
+		border-radius: 20px 20px 0 0;
+	}
 
-@media only screen and (min-width: 1440px) {  
-    .contenedor{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 10vmin;
-    }
-    .imagen{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 80vmin;
-    }
+	.sushi {
+		height: 80%;
+		border-radius: 20px;
+	}
 
-    .sushi{
-        height: 80%;
-        border-radius: 20px;
-    }
-
-    .parrafo{
-        width: 60%;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0;
-        font-size: 35px;
-        padding-left: 15px;
-        text-align: left;
-    }
-
-
+	.parrafo {
+		width: 60%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 50px;
+		font-size: 35px;
+		text-align: left;
+	}
 }
