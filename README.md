@@ -1,5 +1,5 @@
 # Marín's Japanese Restaurant
 
-![Device View]('device-view.png')
+![Device View]('https://imgur.com/a/ZDduykL')
 
 # https://marins-japanese-restaurant.netlify.app/
